@@ -1,0 +1,113 @@
+﻿div.page-content{
+	display:grid;
+	justify-content: center;
+	align-content: center;
+}
+  
+div.contact-banner{
+	box-sizing: border-box;
+	
+	position: absolute;
+	width: 1338px;
+	height: 200px;
+	left: 185px;
+	top: 186px;
+	background: #CF8E8E;
+	border-radius: 5px;
+	text-align:center;
+	
+}
+
+.get-in-touch{
+		
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 95px;
+	line-height: 115px;
+	text-align: center;
+	color: #FFFFFF;
+	mix-blend-mode: hard-light;
+}
+
+.question{
+		
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 32px;
+	line-height: 39px;
+	/* identical to box height */
+	
+	text-align: center;
+	
+	color: #000000;	
+}
+
+input[type=text] {
+  width: 30%;
+  font-size: 20px;
+  padding: 6px;
+  border: none;
+  background:none;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+#name{
+	position: absolute;
+	width: 502px;
+	height: 65px;
+	left: 344px;
+	top: 435px;
+	border: none;
+	background: #D9D9D9;
+}
+
+#email{
+	position: absolute;
+	width: 502px;
+	height: 65px;
+	left: 891px;
+	top: 436px;
+	border: none;
+	background: #D9D9D9;
+}
+
+#phone{
+	position: absolute;
+	width: 502px;
+	height: 65px;
+	left: 604px;
+	top: 530px;
+	border: none;
+	background: #D9D9D9;
+}
+
+#message{
+	position: absolute;
+	width: 1051px;
+	height: 219px;
+	left: 344px;
+	top: 625px;
+	border: none;
+	background: #D9D9D9;
+}
+
+#submit{
+font-family: Inter, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	font-size: 25px;
+	border: none;
+
+	position: absolute;
+	width: 402px;
+	height: 45px;
+	left: 690px;
+	top: 900px;
+	background: #922727;
+	border:none;
+	color: #FFFFFF;
+}
