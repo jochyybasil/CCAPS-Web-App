@@ -1,0 +1,90 @@
+﻿.page-content{
+	margin: auto;
+	border: 3px solid green;
+	padding: 10px;
+	align-content:center;
+	width: 90%; 
+	height: 659px;
+	
+}
+
+.profile-pic-container{
+
+position: absolute;
+width: 384px;
+height: 557px;
+left: 15%;
+top: 25%;
+
+background: rgba(160, 30, 30, 0.5);
+border-radius: 5px;}
+
+.profile-pic{
+	position: absolute;
+	width: 252px;
+	height: 246px;
+	left: 54px;
+	top: 63px;
+	background: url("/MindScope-Web-App/Screenshot_20221101_101559.png");
+	background-size: cover;
+	border-radius: 50%;
+
+
+
+}
+
+.profile-info-container{
+position: absolute;
+width: 783px;
+height: 563px;
+left: 40%;
+top:25%;
+
+background: #D9D9D9;
+border-radius: 5px;
+}
+
+
+.info-content{
+	position: absolute;
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 29px;
+	
+	/* identical to box height */
+	
+	
+	color: #000000;
+}
+input[type=text] {
+  width: 30%;
+  font-size: 20px;
+  padding: 6px;
+  border: none;
+  background:none;
+  border-radius: 4px;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+.edit-profile-text a {
+	position: absolute;
+	width: 166px;
+	height: 39px;
+	left: 289px;
+	top: 469px;	
+	font-family: Inter, Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 39px;
+	/* identical to box height */
+	color: #000000;
+	color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
