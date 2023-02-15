@@ -67,6 +67,7 @@ CREATE TABLE Booking (
     start_time time NOT NULL,
     StudentID tinyint NOT NULL, -- Student ID --
     InstructorID tinyint NOT NULL, -- Instructor ID --
+    user_comment varchar(1000),
     therapyID int,
     
     PRIMARY KEY(bookingID),
