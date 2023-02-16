@@ -22,9 +22,9 @@
                     <form class="form_login">
                         <input type="email" id="email" name="email" placeholder="Email" required><br>
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
-                        <button type="submit" class="loginbtn">Log In</button>
+                        <button type="submit" name ="login" class="loginbtn">Log In</button>
                     </form>
-                    <p id="redirect-signup">Don't have an account?<a>Sign Up</a></p>
+                    <p id="redirect-signup">Don't have an account?<a href ="register.php">Sign Up</a></p>
                 </div>
             </div>
         </div>
