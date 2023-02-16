@@ -3,8 +3,23 @@ Drop database if exists MindScope;
 Create database MindScope;
 Use Mindscope;
 
+
+
+
 CREATE TABLE Web_user (
     web_userID tinyint auto_increment,
+    userFname varchar(20) NOT NULL,
+    userLname varchar(27) NOT NULL,
+    email_address varchar(60) NOT NULL UNIQUE,
+    user_password varchar(200) NOT NULL,
+    
+    
+    PRIMARY KEY (web_userID)
+);
+
+
+CREATE TABLE User_profile(
+    web_userID tinyint,
     userFname varchar(20) NOT NULL,
     userLname varchar(27) NOT NULL,
     Inst_ID tinyint UNIQUE,
@@ -13,8 +28,10 @@ CREATE TABLE Web_user (
     email_address varchar(60) NOT NULL UNIQUE,
     department varchar(50) NOT NULL,
     gender varchar(6) NOT NULL,
+    FOREIGN KEY (web_userID) REFERNCES Web_user(web_userID)
     
-    PRIMARY KEY (web_userID)
+    
+
 );
 
 
@@ -22,8 +39,9 @@ CREATE TABLE Student(
     web_userID tinyint,
     year_group int NOT NULL,
     major varchar(25),
-    
-    PRIMARY KEY (web_userID)
+	
+	
+    FOREIGN KEY (web_userID) REFERNCES Web_user(web_userID)
 );
 
 
@@ -33,7 +51,7 @@ CREATE TABLE CP_Staff (
      title varchar (20) NOT NULL,
      dateJoined date,
      
-     PRIMARY KEY(web_userID)
+     FOREIGN KEY (web_userID) REFERNCES Web_user(web_userID)
 );
 
 
@@ -67,6 +85,7 @@ CREATE TABLE Booking (
     start_time time NOT NULL,
     StudentID tinyint NOT NULL, -- Student ID --
     InstructorID tinyint NOT NULL, -- Instructor ID --
+    user_comment varchar(1000),
     therapyID int,
     
     PRIMARY KEY(bookingID),
