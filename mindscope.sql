@@ -11,6 +11,7 @@ CREATE TABLE Web_user (
     userFname varchar(20) NOT NULL,
     userLname varchar(27) NOT NULL,
     email_address varchar(60) NOT NULL UNIQUE,
+    user_status int,
     user_password varchar(200) NOT NULL,
     
     
