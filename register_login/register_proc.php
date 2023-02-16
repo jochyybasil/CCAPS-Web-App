@@ -9,15 +9,30 @@ if(isset($_POST["register"])){
     $mail = $_POST["email"];
     $passw = $_POST["pass"];
     $confirm_passw = $_POST["confirm_pass"];
+    $user_status = $_POST["user_type"];
 
-    if($confirm_passw ==$passw){
+    if( $user_status == "student"){
+        $status = 2;
+    }
+    else{$status = 1}
 
-        $sql="INSERT INTO Web_user (userFname, userLname, Inst_ID, DOB, phone_number, email_address, department, gender)
-         VALUES ('$first_name', '$last_name', '$mail', md5('$password'))";
-        $result= $conn->query($sql);
+    if($confirm_passw == $passw){
+
+        $login_sql="INSERT INTO Web_user (userFname, userLname, email_address, user_status, user_password)
+         VALUES ('$first_name', '$last_name', '$mail','$status' md5('$password'))";
+
+        $result= $conn->query($login_sql);
+
         if($result){
-             header("Location: login.php");
-             exit();
+            if ($status == 1){
+                header("Location: dashboard.php");
+                exit();
+            }
+            else{
+                header("Location: index.php");
+                exit();
+            }
+             
         }
         else{
             echo <script> alert("Please enter the same password")</script>

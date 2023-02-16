@@ -55,7 +55,7 @@
 .register{
     background-color: white;
     padding: 1rem 1rem;
-    height: 300px;
+    height: 350px;
     margin-top: 60px;
     width: 300px;
     margin-left: 30px;
@@ -76,7 +76,20 @@ input{
     background: #f1f1f1;
   }
 
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+  #user_type {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+
+  }
+  #user_type::-ms-expand {
+    display: none;
+  }
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, select {
     background-color: #ddd;
     outline: none;
   }
