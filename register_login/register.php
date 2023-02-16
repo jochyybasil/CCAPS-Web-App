@@ -23,8 +23,8 @@
                         <input type="text" id="lname" name="lanme" placeholder="Last name" required><br>
                         <input type="email" id="email" name="email" placeholder="Email" required><br>
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
-                        <input type="password" id="pass" name="pass" placeholder="Repeat Password" required><br>
-                        <button type="submit" class="registerbtn">Register</button>
+                        <input type="password" id="pass" name="confirm_pass" placeholder="Repeat Password" required><br>
+                        <button type="submit" name = "register" class="registerbtn">Register</button>
                     </form>
                     <p id="redirect-login">Already have an account?<a href="login.php">Log In</a></p>
                 </div>
