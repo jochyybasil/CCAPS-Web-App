@@ -82,7 +82,18 @@ input{
     background: #f1f1f1;
   }
 
+  #user_type {
+    width: 90%;
+    padding: 10px;
+    margin: 5px 0 5px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
 
+  }
+  #user_type::-ms-expand {
+    display: none;
+  }
 
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, select {
     background-color: #ddd;
