@@ -129,3 +129,9 @@ CREATE TABLE  MessageUser(
     FOREIGN KEY(messageID) REFERENCES Messages(messageID) ON DELETE CASCADE
 );
 
+CREATE TABLE Contact(
+  uname varchar(50),
+  utel_number int, 
+  uemail varchar(50),
+  message text
+);
