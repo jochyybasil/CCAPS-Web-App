@@ -85,7 +85,9 @@ input{
     background: #f1f1f1;
 
   }
-  
+  #user_type::-ms-expand {
+    display: none;
+  }
 
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, select {
     background-color: #ddd;
@@ -110,5 +112,3 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, sel
   .registerbtn:hover {
     opacity: 1;
   }
-
-
