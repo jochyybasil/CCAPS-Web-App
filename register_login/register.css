@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .Mindscope{
     background-color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -76,7 +82,9 @@ input{
     background: #f1f1f1;
   }
 
-input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, select {
     background-color: #ddd;
     outline: none;
   }
@@ -99,3 +107,5 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
   .registerbtn:hover {
     opacity: 1;
   }
+
+

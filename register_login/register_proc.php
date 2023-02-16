@@ -9,13 +9,18 @@ if(isset($_POST["register"])){
     $mail = $_POST["email"];
     $passw = $_POST["pass"];
     $confirm_passw = $_POST["confirm_pass"];
+    $user_status = $_POST["user_type"];
 
-    if($confirm_passw = =$passw){
+    if($confirm_passw == $passw){
 
-        $sql="INSERT INTO Web_user (userFname, userLname, Inst_ID, DOB, phone_number, email_address, department, gender)
+        $login_sql="INSERT INTO Web_user (userFname, userLname, email_address, user_password)
          VALUES ('$first_name', '$last_name', '$mail', md5('$password'))";
-        $result= $conn->query($sql);
+
+        $result= $conn->query($login_sql);
+
         if($result){
+
+            
              header("Location: login.php");
              exit();
         }
