@@ -11,6 +11,7 @@ CREATE TABLE Web_user (
     userFname varchar(20) NOT NULL,
     userLname varchar(27) NOT NULL,
     email_address varchar(60) NOT NULL UNIQUE,
+    user_status int,
     user_password varchar(200) NOT NULL,
     
     
@@ -129,3 +130,9 @@ CREATE TABLE  MessageUser(
     FOREIGN KEY(messageID) REFERENCES Messages(messageID) ON DELETE CASCADE
 );
 
+CREATE TABLE Contact(
+  uname varchar(50),
+  utel_number int, 
+  uemail varchar(50),
+  message text
+);

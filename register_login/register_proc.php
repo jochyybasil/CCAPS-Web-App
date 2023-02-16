@@ -11,7 +11,7 @@ if(isset($_POST["register"])){
     $confirm_passw = $_POST["confirm_pass"];
     $user_status = $_POST["user_type"];
 
-    if($confirm_passw == $passw){
+    if($confirm_passw = =$passw){
 
         $login_sql="INSERT INTO Web_user (userFname, userLname, email_address, user_password)
          VALUES ('$first_name', '$last_name', '$mail', md5('$password'))";
