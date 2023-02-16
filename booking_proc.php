@@ -1,5 +1,5 @@
 
-<? php
+<?php
 include(session.php);
 $apt_date = $_POST["apt_date"]; // appointment date
 $apt_start_time = $_POST["start_time"]; // start time
