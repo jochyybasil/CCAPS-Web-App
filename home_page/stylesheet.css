@@ -1,50 +1,55 @@
-/* This box class is purely used for explaining how the bootstrap grid system works. */
-.box {
-    background-color: rgb(146, 15, 6);
-    border: 1px solid rgb(146, 15, 6);
-    min-height: 50px;
-    font-size: 2rem;
-    padding: 1px 0;
-    margin-left: -12px;
-    margin-right: -12px;
-  }
+.toptext{
+  font-family:Arial, Helvetica, sans-serif, Arial, sans-serif;
+  color: white;
+  margin:0;
+}
 
-  .box-bookhead{
-    margin-top:30px;
-    height:250px !important;
-    color:black;
-    text-align: center;
-  }
+/* used for the top text to create a container */
+.box {
+  background-color: rgb(146, 15, 6);
+  border: 1px solid rgb(146, 15, 6);
+  min-height: 50px;
+  font-size: 2rem;
+  padding: 1px 0;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+  /* used for the booking page top picture box */
+.box-bookhead{
+  margin-top:30px;
+  height:250px !important;
+  color:black;
+  text-align: center;
+}
+
+/* used for the container for all booking content */
+.bookingbox{
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  color:black;
+}
   
-  .bookingbox{
-    margin-top: 30px;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    color:black;
-  }
-  
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}  
+
+
   footer{
     margin-left: -12px;
     margin-right: -12px;
     margin-top: 30px;
     color:white;
   }
-  
-  .toptext{
-    font-family:Arial, Helvetica, sans-serif, Arial, sans-serif;
-    color: white;
-    margin:0;
-  }
-  
-  .text-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-  }  
+
   
   .recbg{
     background-color: #cccccc;
@@ -219,4 +224,8 @@ text-align: center;
   .chat{
     align-items: center;
     justify-content: center;
+  }
+
+  .fit-cover {
+    object-fit: cover;
   }
