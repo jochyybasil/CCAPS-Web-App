@@ -1,4 +1,4 @@
-<? php
+<?php
 
 // check if login form was submitted, else redirect/return back to login page
 if (isset($_POST['login'])){
