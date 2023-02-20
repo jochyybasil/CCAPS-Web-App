@@ -37,6 +37,8 @@
         </div>
 
         <script type="text/javascript">
+
+        // validation
 		function validateEmail() {
 			//get form data
             var firstName = document.getElementById('fname');
