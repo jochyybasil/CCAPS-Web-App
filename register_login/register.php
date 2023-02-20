@@ -35,5 +35,59 @@
                 </div>
             </div>
         </div>
+
+        <script type="text/javascript">
+		function validateEmail() {
+			//get form data
+            var firstName = document.getElementById('fname');
+			var lastName = document.getElementById('lname');
+			var uemail = document.getElementById('email');
+            var student_councelor = document.getElementById('user_type');
+			var pass = document.getElementById('pass');
+            var con_pass = document.getElementById('confirm_pass');
+
+			var regbutton = document.getElementById('register');
+
+			var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+			//validate data 
+			if (uemail.value.match(mailformat)) {
+                hangdleAjax();
+				alert('email is valid');
+				//call the post method
+			}else{
+				alert('email is wrong');
+				return false;
+			}
+
+			alert('this is after validation');
+			
+			
+			//make a post request to register_proc page
+			function hangdleAjax() {
+                const ajax = new XMLHttpRequest();
+
+                function handler(){
+                    // Process the server response here.
+                }
+                ajax.onreadystatechange = handler;
+
+                // make request
+                httpRequest.open('POST','register_proc.php');
+
+                //create parameter
+                const params = 'first_name'=${firstName.value}&'last_name'=${lastName.value}
+                &'mail'=${uemail.value}&'passw'=${pass.value}&'confirm_passw'=${con_pass.value}
+                &'user_status'=${student_counselor.value};
+
+
+                setRequestHeader("Content-Type","application/x-www-form-urlencoded"); 
+
+
+					}
+	</script>
+
+
+
     </body>
-</html>i
+</html>
