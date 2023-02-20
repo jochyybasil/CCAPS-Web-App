@@ -14,7 +14,9 @@ if(isset($_POST["register"])){
     if( $user_status == "student"){
         $status = 2;
     }
-    else{$status = 1};
+    else{
+        $status = 1;
+    }
 
     if($confirm_passw == $passw){
 
@@ -35,7 +37,7 @@ if(isset($_POST["register"])){
              
         }
         else{
-            echo <script> alert("Please enter the same password")</script>
+            echo '<script> alert("Please enter the same password")</script>';
             header("Location: register.php");
              exit();
         }
