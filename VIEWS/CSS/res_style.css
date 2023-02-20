@@ -1,40 +1,6 @@
 
-body{
-    font-family:Arial, Helvetica, sans-serif, Arial, sans-serif;
-}
-.tab{
-    background-color: rgb(146, 15, 6);
-    border: 1px solid rgb(146, 15, 6);
-    min-height: 50px;
-    font-size: 2rem;
-    padding: 8px 0;
-    font-family:Arial, Helvetica, sans-serif, Arial, sans-serif;
-    margin:0;
-}
-h3{
-    color: white;
-}
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-size: 20px;
-    
-}
-.list1{
-    float:left;
-}
-.list2{
-    float:right;
-}
-
-li a{
-    display: block;
-    padding: 8px;
-}
-.dot {
+.circ {
     height: 220px;
     width: 220px;
     background-color:rgb(146,15,6);
@@ -43,8 +9,9 @@ li a{
     text-align:center;
     color:white;
     align-items: left;
-    line-height: 170px;
+    line-height: 200px;
     font-size: 25px;
+    
    
 }
 #div1{
@@ -61,9 +28,10 @@ li a{
     align-items: left;
     float:right;
     width:33%;
+    
 }
 
-.box{
+.circle_case{
    
     padding: 80px 80px 80px 150px;
     

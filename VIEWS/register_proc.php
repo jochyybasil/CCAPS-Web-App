@@ -14,7 +14,7 @@ if(isset($_POST["register"])){
     if( $user_status == "student"){
         $status = 2;
     }
-    else{$status = 1}
+    else{$status = 1};
 
     if($confirm_passw == $passw){
 
