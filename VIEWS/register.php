@@ -37,6 +37,8 @@
         </div>
 
         <script type="text/javascript">
+
+        // validation
 		function validateEmail() {
 			//get form data
             var firstName = document.getElementById('fname');
@@ -52,6 +54,7 @@
 
 			//validate data 
 			if (uemail.value.match(mailformat)) {
+                hangdleAjax();
 				alert('email is valid');
 				//call the post method
 			}else{
@@ -76,7 +79,8 @@
 
                 //create parameter
                 const params = 'first_name'=${firstName.value}&'last_name'=${lastName.value}
-                &'mail'=${uemail.value}&'passw'=${pass.value}&'confirm_passw'=${con_pass.value}&'user_status'=${student_counselor.value};
+                &'mail'=${uemail.value}&'passw'=${pass.value}&'confirm_passw'=${con_pass.value}
+                &'user_status'=${student_counselor.value};
 
 
                 setRequestHeader("Content-Type","application/x-www-form-urlencoded"); 
