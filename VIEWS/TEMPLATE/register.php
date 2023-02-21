@@ -4,7 +4,7 @@
         <meta charset="">
         <meta>
         <title>Register</title>
-        <link rel="stylesheet" href="register.css?<?php echo time(); ?>">
+        <link rel="stylesheet" href="CSS/register.css? <?php echo time(); ?>">
     </head>
     <body>
         <header class="Mindscope">
@@ -31,7 +31,7 @@
                         <input type="password" id="pass" name="confirm_pass" placeholder="Repeat Password" required><br>
                         <button type="submit" name = "register" class="registerbtn">Register</button>
                     </form>
-                    <p id="redirect-login">Already have an account?<a href="login.php">Log In</a></p>
+                    <p id="redirect-login">Already have an account?<a href="VIEWS/login.php">Log In</a></p>
                 </div>
             </div>
         </div>
