@@ -134,7 +134,7 @@
     
 
     <!-- circles -->
-    <div class="container-fluid" style="display: flex; flex-wrap: wrap; justify-content: center; margin:20px; margin-top: 80px; margin-bottom: 80px;">
+    <div class="container-fluid" style="display: flex; flex-wrap: wrap; justify-content: center; margin:20px; margin-top: 80px; margin-bottom: 80px; font-weight:bolder;">
         <div class="row" style="color:white;">
             <div class="col" style="display:inline-flex;">
                 <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
