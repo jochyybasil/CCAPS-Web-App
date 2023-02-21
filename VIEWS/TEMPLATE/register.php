@@ -5,11 +5,54 @@
         <meta>
         <title>Register</title>
         <link rel="stylesheet" href="CSS/register.css? <?php echo time(); ?>">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+        <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     </head>
     <body>
-        <header class="Mindscope">
-            MindScope
-        </header>
+        <div class="container-fluid">
+            <div class="row g-0">
+                <div class="col">
+                    <div class="box">
+                        <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand">
+            <div class="container-fluid d-flex justify-content-between">
+
+                <div class="d-flex">
+                    <a class="nav-link" href="#">Sign up</a>
+                    <span class="mx-3">|</span>
+                    <a class="nav-link" href="login.php">Login</a>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.php" class="nav-link active">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.php" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.php" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.php" class="nav-link">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blogs.php" class="nav-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        
         <div class="main">
             <div class="logo">
                 <p>Join the Community</p>
