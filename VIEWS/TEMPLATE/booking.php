@@ -26,9 +26,7 @@
         <div class="container-fluid d-flex justify-content-between">
 
             <div class="d-flex">
-                <a class="nav-link" href="register.php">Sign up</a>
-                <span class="mx-3">|</span>
-                <a class="nav-link" href="login.php">Login</a>
+
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
