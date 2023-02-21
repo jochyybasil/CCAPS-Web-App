@@ -22,7 +22,6 @@
 </head>
 <header>
     <!-- top text -->
-    <!-- top text -->
     <div class="container-fluid">
         <div class="row g-0">
             <div class="col">
