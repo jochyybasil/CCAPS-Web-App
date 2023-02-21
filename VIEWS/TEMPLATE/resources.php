@@ -61,7 +61,7 @@
 <body>
 
 
-    <div class="container">
+    <div class="container" style="font-weight:bolder;">
         <div class="row">
             <div class="col">
             <div class="circle_case">
