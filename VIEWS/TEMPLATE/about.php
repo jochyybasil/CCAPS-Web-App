@@ -28,26 +28,26 @@
             <div class="d-flex">
                 <a class="nav-link" href="#">Sign up</a>
                 <span class="mx-3">|</span>
-                <a class="nav-link" href="VIEWS/login.php">Login</a>
+                <a class="nav-link" href="VIEWS/TEMPLATE/login.php">Login</a>
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="VIEWS/index.php" class="nav-link" aria-current="page">Home</a>
+                    <a href="VIEWS/TEMPLATE/index.php" class="nav-link" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/about.php" class="nav-link active">About</a>
+                    <a href="VIEWS/TEMPLATE/about.php" class="nav-link active">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/services.php" class="nav-link">Services</a>
+                    <a href="VIEWS/TEMPLATE/services.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/events.php" class="nav-link">Events</a>
+                    <a href="VIEWS/TEMPLATE/events.php" class="nav-link">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/resources.php" class="nav-link">Resources</a>
+                    <a href="VIEWS/TEMPLATE/resources.php" class="nav-link">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/blogs.php" class="nav-link">Blogs</a>
+                    <a href="VIEWS/TEMPLATE/blogs.php" class="nav-link">Blogs</a>
                 </li>
             </ul>
         </div>
@@ -91,7 +91,7 @@
             </div>
             <div class="col-md-6">
               <ul class="list-unstyled float-md-end">
-                <li><a href="VIEWS/contact.php">Contact Us</a></li>
+                <li><a href="VIEWS/TEMPLATE/contact.php">Contact Us</a></li>
               </ul>
             </div>
           </div>
