@@ -123,7 +123,7 @@
                 <div class="text-container d-flex flex-column justify-content-center" style="width: 50%; text-align: center;">
                     <p style="font-size: larger; font-weight:bolder; padding-right: 10px;">Our mission is to promote students' well-being within a safe and confidential environment through a range of psychological support and consultation services.</p>
                     <div class="d-flex justify-content-center mt-3">
-                        <button type="button" class="btn btn-primary mr-3" style="background-color: white; border-color: white; color:black;">Read More</button>
+                        <a href="about.php" class="btn btn-primary mr-3" style="background-color: white; border-color: white; color:black;">Read More</a>
                         <span style="width: 10px;"></span>
                         <a href="contact.php" class="btn btn-primary" style="background-color: rgba(146, 15, 6); border-color: rgba(146, 15, 6); color:white;">Contact Us</a>
                     </div>
