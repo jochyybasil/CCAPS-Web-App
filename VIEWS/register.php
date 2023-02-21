@@ -4,7 +4,7 @@
         <meta charset="">
         <meta>
         <title>Register</title>
-        <link rel="stylesheet" href="register.css?<?php echo time(); ?>">
+        <link rel="stylesheet" href="CSS/register.css? <?php echo time(); ?>">
     </head>
     <body>
         <header class="Mindscope">

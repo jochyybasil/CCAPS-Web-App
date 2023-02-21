@@ -4,7 +4,7 @@
         <meta charset="">
         <meta>
         <title>Log In</title>
-        <link rel="stylesheet" href="login.css">
+        <link rel="stylesheet" href="CSS/login.css <?php echo time(); ?>">
     </head>
     <body>
         <header class="Mindscope">
