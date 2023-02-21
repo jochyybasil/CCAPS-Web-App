@@ -66,28 +66,6 @@
     </nav>
 </header>
 <body>
-<!-- <br>
-<div class="page-content">
-	<div class="contact-banner">
-		<h1 class="get-in-touch">Get in touch</h1>
-		<p class="question">Have a question? Please use the form below and we will get back to you shortly.</p>
-
-	</div>
-	<div>
-		<form method="post" action="">
-		<input id="name"  name = "name"type="text"  placeholder="Name" required>
-		<input id="email" name="email" type="text"  placeholder="Email" required>
-		<br>
-		<input id="phone" name="phone" type="text"  placeholder="phone"required>
-		<br>
-		<input id="message" name="message" type="text"  placeholder="type message here..." required>
-		<br>
-</form>
-	</div>
-
-	</div>
-<p>
-		<input id="submit" name = "submit" type="button" value="Submit"></p> -->
 
  
   <div class="contact-container">
@@ -138,7 +116,20 @@
 
 
 
-
+<!-- footer -->
+<footer class="bg-dark py-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2023 MindScope Live. All Rights Reserved.</p>
+            </div>
+            <div class="col-md-6">
+              <ul class="list-unstyled float-md-end">
+              </ul>
+            </div>
+          </div>
+        </div>
+    </footer>
 
 </body>
 <?php 
