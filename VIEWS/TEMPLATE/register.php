@@ -56,7 +56,7 @@
         <div class="main">
             <div class="logo">
                 <p>Join the Community</p>
-                <img id="logo" src="logo.png">
+                <img id="logo" src="IMAGES/logo.png">
                 <p>Counselling, Coaching & Advising<br>for Your Better Life</p>
             </div>
             <div class="register_background">

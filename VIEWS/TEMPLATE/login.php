@@ -64,7 +64,7 @@
         <div class="main">
             <div class="logo">
                 <p>Welcome Back</p>
-                <img id="logo" src="logo.png">
+                <img id="logo" src="IMAGES/logo.png">
                 <p>Counselling, Coaching & Advising<br>for Your Better Life</p>
             </div>
             <div class="login_background">
