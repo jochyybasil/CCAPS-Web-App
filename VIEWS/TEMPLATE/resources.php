@@ -11,30 +11,33 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
-<body>
+<header>
+    <!-- top text -->
     <div class="container-fluid">
         <div class="row g-0">
             <div class="col">
                 <div class="box">
-                    <a href="index.php" class="toptext" style="text-decoration: none; padding:14px;">MindScope</a>
+                    <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
                 </div>
             </div>
         </div>
     </div>
-
 
     <!-- navigation bar -->
     <nav class="navbar navbar-expand">
         <div class="container-fluid d-flex justify-content-between">
 
             <div class="d-flex">
-                <a class="nav-link" href="register.php">Sign up</a>
+            <a class="nav-link" href="register.php">Sign up</a>
                 <span class="mx-3">|</span>
                 <a class="nav-link" href="login.php">Login</a>
-            </div>
+              </div>
+              
+
+
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link active" aria-current="page">Home</a>
+                    <a href="index.php" class="nav-link" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">About</a>
@@ -43,10 +46,10 @@
                     <a href="services.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="events.php" class="nav-link">Events</a>
+                    <a href="events.php"  class="nav-link">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a href="resources.php" class="nav-link">Resources</a>
+                    <a href="resources.php" class="nav-link active" class="nav-link">Resources</a>
                 </li>
                 <li class="nav-item">
                     <a href="blogs.php" class="nav-link">Blogs</a>
@@ -54,6 +57,8 @@
             </ul>
         </div>
     </nav>
+</header>
+<body>
 
 
     <div class="container">
