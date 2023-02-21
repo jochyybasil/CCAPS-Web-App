@@ -125,7 +125,7 @@
                     <div class="d-flex justify-content-center mt-3">
                         <button type="button" class="btn btn-primary mr-3" style="background-color: white; border-color: white; color:black;">Read More</button>
                         <span style="width: 10px;"></span>
-                        <button type="button" class="btn btn-primary" style="background-color: rgba(146, 15, 6); border-color: rgba(146, 15, 6); color:black;">Contact Us</button>
+                        <a href="contact.php" class="btn btn-primary" style="background-color: rgba(146, 15, 6); border-color: rgba(146, 15, 6); color:white;">Contact Us</a>
                     </div>
                 </div>
             </div>
