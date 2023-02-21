@@ -72,7 +72,7 @@
             <br>
             <br>
             <br>
-            <span class="circ"> Yoga and Breathing Videos </span>
+            <span class="circ"> Yoga & Breathing Videos </span>
            
         </div>
 
