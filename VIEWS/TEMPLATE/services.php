@@ -58,7 +58,7 @@
     <!-- services-->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12 p-0" style="background-image: url(https://positive.b-cdn.net/wp-content/uploads/popular-counseling-approaches.jpg); background-size: cover; height: 300px;">
+          <div class="col-12 p-0" style="background-image: url(https://positive.b-cdn.net/wp-content/uploads/popular-counseling-approaches.jpg); background-size: cover; height: 370px;">
             <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(172, 63, 63, 0.726), rgba(172, 63, 63, 0.726)); height: 100%;">
                 <div class="text-wrapper">
                     <h1 class="text-white">Services</h1>
