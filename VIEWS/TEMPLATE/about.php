@@ -14,7 +14,7 @@
         <div class="row g-0">
             <div class="col">
                 <div class="box">
-                    <a href="VIEWS/index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                    <a href="VIEWS/TEMPLATE/index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
                 </div>
             </div>
         </div>

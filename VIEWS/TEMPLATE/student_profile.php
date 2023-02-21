@@ -17,7 +17,7 @@
         <div class="col">
             <div class="row g-0">
                 <div class="box">
-                    <a href="VIEWS/index.php" class="toptext" style="text-decoration: none;">MindScope</a>
+                    <a href="VIEWS/TEMPLATE/index.php" class="toptext" style="text-decoration: none;">MindScope</a>
                 </div>
             </div>
         </div>
@@ -28,31 +28,31 @@
         <div class="container-fluid d-flex justify-content-between">
 
             <div class="d-flex">
-                <a class="nav-link" href="VIEWS/register.php">Sign up</a>
+                <a class="nav-link" href="VIEWS/TEMPLATE/register.php">Sign up</a>
                 <span class="mx-3">|</span>
-                <a class="nav-link" href="VIEWS/login.php">Login</a>
+                <a class="nav-link" href="VIEWS/TEMPLATE/login.php">Login</a>
               </div>
               
 
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="VIEWS/index.php" class="nav-link active" aria-current="page">Home</a>
+                    <a href="VIEWS/TEMPLATE/index.php" class="nav-link active" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/about.php" class="nav-link">About</a>
+                    <a href="VIEWS/TEMPLATE/about.php" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/services.php" class="nav-link">Services</a>
+                    <a href="VIEWS/TEMPLATE/services.php" class="nav-link">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/events.php" class="nav-link">Events</a>
+                    <a href="VIEWS/TEMPLATE/events.php" class="nav-link">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/resources.php" class="nav-link">Resources</a>
+                    <a href="VIEWS/TEMPLATE/resources.php" class="nav-link">Resources</a>
                 </li>
                 <li class="nav-item">
-                    <a href="VIEWS/blogs.php" class="nav-link">Blogs</a>
+                    <a href="VIEWS/TEMPLATE/blogs.php" class="nav-link">Blogs</a>
                 </li>
             </ul>
         </div>

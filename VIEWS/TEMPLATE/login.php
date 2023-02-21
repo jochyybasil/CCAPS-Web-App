@@ -24,7 +24,7 @@
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
                         <button type="submit" name ="login" class="loginbtn">Log In</button>
                     </form>
-                    <p id="redirect-signup">Don't have an account?<a href ="VIEWS/register.php">Sign Up</a></p>
+                    <p id="redirect-signup">Don't have an account?<a href ="VIEWS/TEMPLATE/register.php">Sign Up</a></p>
                 </div>
             </div>
         </div>
