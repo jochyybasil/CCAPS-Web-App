@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(145, 29, 29, 0.826), rgba(145, 29, 29, 0.826));>
     <div class="container-fluid">
         <div class="row g-0">
             <div class="col">
@@ -63,7 +63,7 @@
                             <p class="mb-4">In a bid to encourage the holistic health and well-being of our students, the Office of Student & Community Affairs provides counselling, coaching and academic advising services (CCA) for the student body. Students have someone to talk to about academics as well as social life. Should you need to book an appointment for any member of the CCA team kindly click on this link. Time management, Conflict resolution, Anxiety, Addictions, Depression and Relationship challenges</p>
                         </div>
                     </div>
-                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="https://couplesinstep.com/wp-content/uploads/2019/11/couple-complaining-to-therapist.jpg" /></div>
+                    <div class="col-md-6 order-first order-md-last" style="min-height: 250px;"><img class="w-100 h-100 fit-cover" src="IMAGES/about_page_header.jpg" /></div>
                 </div>
             </div>
         </div>

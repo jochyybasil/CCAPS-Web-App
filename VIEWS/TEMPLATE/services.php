@@ -56,7 +56,7 @@
     <!-- services-->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12 p-0" style="background-image: url(https://positive.b-cdn.net/wp-content/uploads/popular-counseling-approaches.jpg); background-size: cover; height: 370px;">
+          <div class="col-12 p-0" style="background-image: url(IMAGES/services_header.webp); background-size: cover; height: 370px;">
             <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(172, 63, 63, 0.726), rgba(172, 63, 63, 0.726)); height: 100%;">
                 <div class="text-wrapper">
                     <h1 class="text-white">Services</h1>
@@ -72,12 +72,12 @@
         <section class="mb-32 text-gray-800 text-center">
           <div class="d-flex justify-content-center align-items-start flex-wrap">
             <div class="mx-5 my-2">
-              <img src="https://icons.veryicon.com/png/o/miscellaneous/icon-library-of-x-bacteria/appointment-4.png" class="rounded-circle shadow-lg mb-4" alt="John Doe" style="max-width: 100px" />
+              <img src="IMAGES/services_booking.png" class="rounded-circle shadow-lg mb-4" alt="John Doe" style="max-width: 100px" />
               <br>
               <a href="booking.php" class="mb-0" style="text-decoration: none;">Book Appointment</a>
             </div>
             <div class="mx-5">
-              <img src="https://www.pngitem.com/pimgs/m/63-631368_community-transition-black-chat-icon-png-transparent-png.png" class="rounded-circle shadow-lg mb-4" alt="Lisa Ferrol" style="max-width: 100px" />
+              <img src="IMAGES/services_chat.png" class="rounded-circle shadow-lg mb-4" alt="Lisa Ferrol" style="max-width: 100px" />
               <br>
               <a href="messaging.php" class="mb-0" style="text-decoration: none;">Chat with a Counsellor</a>
             </div>
