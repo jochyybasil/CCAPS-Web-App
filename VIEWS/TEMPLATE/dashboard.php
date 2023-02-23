@@ -162,35 +162,6 @@
                 </div>
             </div>
         </div>
-
-        
     </div>
-  </div>
-
-
-
-
-
-
-
-
-
-
-
-    <!-- footer -->
-    <!-- <footer class="bg-dark py-3">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-6">
-              <p>&copy; 2023 MindScope Live. All Rights Reserved.</p>
-            </div>
-            <div class="col-md-6">
-              <ul class="list-unstyled float-md-end">
-                <li><a href="contact.php">Contact Us</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-    </footer> -->
 </body>
 </html>
