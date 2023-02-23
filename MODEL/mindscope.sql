@@ -29,7 +29,7 @@ CREATE TABLE User_profile(
     email_address varchar(60) NOT NULL UNIQUE,
     department varchar(50) NOT NULL,
     gender varchar(6) NOT NULL,
-    FOREIGN KEY (web_userID) REFERNCES Web_user(web_userID)
+    FOREIGN KEY (web_userID) REFERENCES Web_user(web_userID)
     
     
 
@@ -42,7 +42,7 @@ CREATE TABLE Student(
     major varchar(25),
 	
 	
-    FOREIGN KEY (web_userID) REFERNCES Web_user(web_userID)
+    FOREIGN KEY (web_userID) REFERENCES Web_user(web_userID)
 );
 
 
@@ -52,7 +52,7 @@ CREATE TABLE CP_Staff (
      title varchar (20) NOT NULL,
      dateJoined date,
      
-     FOREIGN KEY (web_userID) REFERNCES Web_user(web_userID)
+     FOREIGN KEY (web_userID) REFERENCES Web_user(web_userID)
 );
 
 
@@ -134,5 +134,5 @@ CREATE TABLE Contact(
   uname varchar(50),
   utel_number int, 
   uemail varchar(50),
-  message text
+  message_details text
 );
