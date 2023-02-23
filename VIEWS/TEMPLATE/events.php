@@ -26,11 +26,11 @@
     <nav class="navbar navbar-expand">
         <div class="container-fluid d-flex justify-content-between">
 
-            <div class="d-flex">
-            <a class="nav-link" href="register.php">Sign up</a>
-                <span class="mx-3">|</span>
-                <a class="nav-link" href="login.php">Login</a>
-              </div>
+        <div class="d-flex">
+            <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
+            <span class="mx-3">|</span>
+            <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
+        </div>
               
 
 
@@ -62,7 +62,7 @@
     <!-- blogs picture header-->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12 p-0" style="background-image: url(https://miro.medium.com/v2/resize:fit:720/format:webp/1*ojmc8iBv6hh2dR9wJgHyxw.jpeg); background-size: cover; height: 370px;">
+          <div class="col-12 p-0" style="background-image: url(IMAGES/events_header.webp); background-size: cover; height: 370px;">
             <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(172, 63, 63, 0.726), rgba(172, 63, 63, 0.726)); height: 100%;">
                 <div class="text-wrapper">
                     <h1 class="text-white">Events</h1>
@@ -82,7 +82,7 @@
         </div>
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://www.talkspace.com/blog/wp-content/uploads/2020/06/black-lives-matter-self-care-reimagine_1200-1.jpg" />
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="IMAGES/events_p1.jpg" />
                     <div class="card-body p-4">
                         <h4 class="card-title">Loving Yourself Inside-Out</h4>
                         <!-- <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" />
@@ -95,7 +95,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://positive.b-cdn.net/wp-content/uploads/1_self-esteem-psychology.jpg" />
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="IMAGES/events_p2.webp" />
                     <div class="card-body p-4">
                         <h4 class="card-title">Finding Yourself</h4>
                         <!-- <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png" />
@@ -108,7 +108,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://img.freepik.com/free-photo/guys-receive-nice-surprise-two-attractive-carefree-surprised-happy-african-man-woman-clapping-hands_1258-129195.jpg" />
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="IMAGES/events_p3.avif" />
                     <div class="card-body p-4">
                         <h4 class="card-title">Handling Toxicity</h4>
                         

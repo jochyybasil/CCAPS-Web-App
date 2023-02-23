@@ -26,11 +26,12 @@
     <nav class="navbar navbar-expand">
         <div class="container-fluid d-flex justify-content-between">
 
-            <div class="d-flex">
-            <a class="nav-link" href="register.php">Sign up</a>
-                <span class="mx-3">|</span>
-                <a class="nav-link" href="login.php">Login</a>
-              </div>
+        <div class="d-flex">
+            <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
+            <span class="mx-3">|</span>
+            <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
+        </div>
+
               
 
 
@@ -62,7 +63,7 @@
     <!-- counselling picture header-->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12 p-0" style="background-image: url(https://www.ashesi.edu.gh/images/2018_Website/Student_Life/Ashesi_StudentLife-Banner4.jpg); background-size: cover; height: 370px;">
+          <div class="col-12 p-0" style="background-image: url(IMAGES/index_page_header.jpg); background-size: cover; height: 370px;">
             <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(172, 63, 63, 0.726), rgba(172, 63, 63, 0.726)); height: 100%;">
                 <div class="text-wrapper">
                     <h1 class="text-white">Counselling, Coaching & Advising</h1>
@@ -118,7 +119,7 @@
         <div class="col d-flex align-items-center" style="background-color: #ccc;">
             <div class="box-with-picture d-flex" style="height: 300px;">
                 <div class=" picture-container" style="width: 50%; height: 100%; background-size: cover;">
-                    <img src="https://post.healthline.com/wp-content/uploads/2020/04/therapy-group-therapist-talking-1200x628-facebook-1200x628.jpg" alt="Picture" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="IMAGES/index_contact_box.webp" alt="Picture" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 <div class="text-container d-flex flex-column justify-content-center" style="width: 50%; text-align: center;">
                     <p style="font-size: larger; font-weight:bolder; padding-right: 10px;">Our mission is to promote students' well-being within a safe and confidential environment through a range of psychological support and consultation services.</p>

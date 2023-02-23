@@ -27,10 +27,11 @@
         <div class="container-fluid d-flex justify-content-between">
 
             <div class="d-flex">
-                <a class="nav-link" href="register.php">Sign up</a>
+                <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
                 <span class="mx-3">|</span>
-                <a class="nav-link" href="login.php">Login</a>
+                <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
             </div>
+            
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="index.php" class="nav-link" aria-current="page">Home</a>
@@ -58,10 +59,10 @@
     <!-- blogs picture header-->
     <div class="container-fluid">
         <div class="row">
-          <div class="col-12 p-0" style="background-image: url(https://images.ctfassets.net/zkw0qlnf0vqv/psycom_page_fid32000_asset_13579/c64c2ea22e51c5a137f9fe0ab049979f/GettyImages-1321372162.jpg?fm=webp&fit=thumb&q=65&w=864&h=576); background-size: cover; height: 370px;">
+          <div class="col-12 p-0" style="background-image: url(IMAGES/blogs_header.webp); background-size: cover; height: 370px;">
             <div class="gradient-overlay" style="background: linear-gradient(to bottom, rgba(172, 63, 63, 0.726), rgba(172, 63, 63, 0.726)); height: 100%;">
                 <div class="text-wrapper">
-                    <h1 class="text-white">Our Self-Care Blog</h1>
+                    <h1 class="text-white">Self-Care Blog</h1>
                     <br>
                 </div>
             </div>
@@ -79,7 +80,7 @@
         </div>
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://www.talkspace.com/blog/wp-content/uploads/2020/06/black-lives-matter-self-care-reimagine_1200-1.jpg" />
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="IMAGES/events_p1.jpg" />
                     <div class="card-body p-4">
                         <p class="text-primary card-text mb-0">February 5, 2023</p>
                         <h4 class="card-title">Loving Yourself Inside-Out</h4>
@@ -94,7 +95,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://positive.b-cdn.net/wp-content/uploads/1_self-esteem-psychology.jpg" />
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="IMAGES/events_p2.webp" />
                     <div class="card-body p-4">
                         <p class="text-primary card-text mb-0">February 19, 2023</p>
                         <h4 class="card-title">Finding Yourself</h4>
@@ -109,7 +110,7 @@
                 </div>
             </div>
             <div class="col">
-                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="https://img.freepik.com/free-photo/guys-receive-nice-surprise-two-attractive-carefree-surprised-happy-african-man-woman-clapping-hands_1258-129195.jpg" />
+                <div class="card"><img class="card-img-top w-100 d-block fit-cover" style="height: 200px;" src="IMAGES/events_p3.avif" />
                     <div class="card-body p-4">
                         <p class="text-primary card-text mb-0">March 6, 2023</p>
                         <h4 class="card-title">Handling Toxicity</h4>
