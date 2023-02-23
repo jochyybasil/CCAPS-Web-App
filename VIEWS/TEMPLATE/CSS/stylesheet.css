@@ -32,6 +32,20 @@
   text-decoration: none;
   color:black;
 }
+
+.box-dashboard{
+  /* background-color: rgba(146,15,6);
+  min-height: 50px; */
+
+  background-color: rgb(146, 15, 6);
+  border: 1px solid rgb(146, 15, 6);
+  min-height: 50px;
+  font-size: 2rem;
+  padding: 1px 0;
+  margin-left: -12px;
+  margin-right: -12px;
+
+}
   
 
 .text-wrapper {
@@ -229,4 +243,3 @@ text-align: center;
   .fit-cover {
     object-fit: cover;
   }
-
