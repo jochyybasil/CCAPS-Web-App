@@ -94,25 +94,23 @@
 <div class="container">
     <div class="square">
         <img src="IMAGES/counsellor_icon.png" alt="Peer Counsellors icon" class="icon">
-        <a href="https://www.ashesi.edu.gh" style="color:white; text-decoration:none; font-weight:bolder;">Peer Counsellors</a>
+        <a href="https://www.ashesi.edu.gh" style="color:white; font-weight:bolder;">Peer Counsellors</a>
     </div>
     <div class="square">
         <img src="IMAGES/tutor_icon.png" alt="Peer Tutors icon" class="icon">
-        <a href="https://www.ashesi.edu.gh" style="color:white; text-decoration:none; font-weight:bolder;">Peer Tutors</a>
+        <a href="https://www.ashesi.edu.gh" style="color:white; font-weight:bolder;">Peer Tutors</a>
     </div>
-
-    
     <div class="square">
         <img src="IMAGES/mha_icon.png" alt="Mental Health" class="icon">
-        <a href="https://www.ashesi.edu.gh" style="color:white; text-decoration:none; font-weight:bolder;">Mental Health Awareness</a>
+        <a href="https://www.ashesi.edu.gh" style="color:white; font-weight:bolder;">Mental Health Awareness</a>
     </div>
     <div class="square">
         <img src="IMAGES/advisor_icon.png" alt="Academic Advisor" class="icon">
-        <a href="https://www.ashesi.edu.gh" style="color:white; text-decoration:none; font-weight:bolder;">Academic Advisor</a>
+        <a href="https://www.ashesi.edu.gh" style="color:white; font-weight:bolder;">Academic Advisor</a>
     </div>
     <div class="square">
         <img src="IMAGES/rant_icon.png" alt="Rant Box" class="icon">
-        <a href="messaging.php" style="color:white; text-decoration:none; font-weight:bolder;">Rant Box</a>
+        <a href="messaging.php" style="color:white; font-weight:bolder;">Rant Box</a>
     </div>
 </div>
 
