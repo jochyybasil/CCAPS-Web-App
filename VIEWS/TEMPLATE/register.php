@@ -60,9 +60,9 @@
             </div>
             <div class="register_background">
                 <div class="register">
-                    <form class="form_register">
-                        <input type="text" id="fname" name="fanme" placeholder="First name" required><br>
-                        <input type="text" id="lname" name="lanme" placeholder="Last name" required><br>
+                    <form class="form_register" >
+                        <input type="text" id="fname" name="fname" placeholder="First name" required><br>
+                        <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
                         <input type="email" id="email" name="email" placeholder="Email" required><br>
                         <select name="user_type" id="user_type" required>
                             <option value="">---Please choose one-</option>
@@ -70,19 +70,16 @@
                             <option value="saab">Councellor</option>
                         </select>
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
-                        <input type="password" id="pass" name="confirm_pass" placeholder="Repeat Password" required><br>
-                        <button type="submit" name = "register" class="registerbtn">Register</button>
+                        <input type="password" id="con_pass" name="confirm_pass" placeholder="Repeat Password" required><br>
+                        <input type="submit" id="register" name = "register" value = "Register" class="registerbtn" onclick="emailVaidation()">
                     </form>
-                    <p style="padding:10px" id="redirect-login">Already have an account?<a href="login.php">Log In</a></p>
+                    <p style="padding:10px;" id="redirect-login">Already have an account?<a href="login.php">Log In</a></p>
                 </div>
             </div>
         </div>
+        <!-- action = "http://localhost/MindScope-Web-App/CONTROL/register_proc.php" method="POST" -->
+        <script>
 
-        <script type="text/javascript">
-
-        // validation
-		function validateEmail() {
-			//get form data
             var firstName = document.getElementById('fname');
 			var lastName = document.getElementById('lname');
 			var uemail = document.getElementById('email');
@@ -92,46 +89,61 @@
 
 			var regbutton = document.getElementById('register');
 
-			var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            var url = "http://localhost/MindScope-Web-App/CONTROL/register_proc.php"
+            function emailValidation(){
+			var mailreg = /^((?!\.)[\w_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])/;
 
-			//validate data 
-			if (uemail.value.match(mailformat)) {
-                hangdleAjax();
-				alert('email is valid');
-				//call the post method
-			}else{
-				alert('email is wrong');
+			if(mailreg.test(uemail.value)){
+				// mailreg.test(uemail.match)
+				alert('email is vald');
+				handleAjax();
 				return false;
 			}
+			else{
+				alert('email is not vald');
+				return false;
+			}
+		}
 
-			alert('this is after validation');
-			
-			
-			//make a post request to register_proc page
-			function hangdleAjax() {
-                const ajax = new XMLHttpRequest();
+        handleAjax(){
+            
+			ajax.onreadystatechange = handler;
 
-                function handler(){
-                    // Process the server response here.
-                }
-                ajax.onreadystatechange = handler;
+            //make a request
+            ajax.open('POST', url);
 
-                // make request
-                httpRequest.open('POST','register_proc.php');
+            //create parameters
+            const params = 'fname='+firstName+'&lname='+lastName+'&email='+uemail+'&user_type='+student_councelor+'&pass='+pass+'&confirm_pass='+con_pass+'&register='+regbutton;
 
-                //create parameter
-                const params = 'first_name'=${firstName.value}&'last_name'=${lastName.value}
-                &'mail'=${uemail.value}&'passw'=${pass.value}&'confirm_passw'=${con_pass.value}
-                &'user_status'=${student_counselor.value};
+            ajax.setRequestHeader(
+                "Content-Type",
+                "application/x-www-form-urlencoded"
+            );
+            ajax.send(params)
 
+        }
 
-                setRequestHeader("Content-Type","application/x-www-form-urlencoded"); 
-
-
+        function handler() {
+  				// Process the server response here.
+  				if (ajax.readyState === XMLHttpRequest.DONE) {
+				  // Everything is good, the response was received.
+  					if (ajax.status === 200) {
+					  // Perfect!
+  						alert('successfully register')
+  						return false;
+					} else {
+					  // There was a problem with the request.
+						alert('something went wrong')
+						return false;
+					  // For example, the response may have a 404 (Not Found)
+					  // or 500 (Internal Server Error) response code.
 					}
-	</script>
+
+				} 
+			}
 
 
+        </script>
 
     </body>
 </html>

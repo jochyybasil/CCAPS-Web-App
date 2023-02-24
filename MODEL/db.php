@@ -1,14 +1,16 @@
 <?php
 
-$servername ="";
-$username ="";
-$password = "";
-$dbname = "";
+	//database connection parameters
+	$servername = "localhost";
+	$username = "root";
+	$password = "";
+	$dbname = "mindscope";
 
-$conn = mysqli($servername,$username,$password,$dbname);
-
-if ($conn->connect_error){
-    die("Connection failed", $conn->connect_error);
-}
-// jjsut because
+	// Create connection
+	$conn = new mysqli($servername, $username, $password, $dbname);
+	// Check connection
+	if ($conn->connect_error) {
+		//stop executing the code and echo error
+	  die("Connection failed: " . $conn->connect_error);
+	} 
 ?>
