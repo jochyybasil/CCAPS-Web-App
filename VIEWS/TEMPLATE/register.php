@@ -103,9 +103,9 @@
 				alert('email is not vald');
 				return false;
 			}
-		}
+            }
 
-        handleAjax(){
+        function handleAjax(){
             
 			ajax.onreadystatechange = handler;
 
