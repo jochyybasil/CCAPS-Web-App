@@ -1,3 +1,27 @@
+<?php 
+  include ($_SERVER['DOCUMENT_ROOT'].'/MODEL/db.php');
+?>
+<?php 
+    if(isset($_POST["submit"])){
+        $name =$_POST["username"];
+        $email =$_POST["email"];
+        $phone =$_POST["phone"];
+        $message =$_POST["message"];
+
+        $sql  = "INSERT INTO Contact (uname, utel_number, uemail, message_details)
+        VALUES ('$name', '$phone', '$mail','$message')";
+
+       $result= $conn->query($sql);
+
+       if($result){
+        echo "<script> alert('message sent');</script>";
+       }
+       else{
+            echo "<script> alert('message failed to send');</script>";
+       }
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +30,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="CSS/stylesheet.css?"<?php echo time(); ?>>
-    <link rel="stylesheet" href="CSS/style.css?"<?php echo time(); ?>>
     <link rel="stylesheet" href="CSS/contact.css?"<?php echo time(); ?>>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">            
-
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-	
-  <!-- <title> Responsive Contact Us Form  | CodingLab </title>-->
-  <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+</script>
+	
 </head>
 <header>
     <!-- top text -->
@@ -91,7 +110,8 @@
       <div class="right-side">
         <div class="topic-text">Send us a message</div>
         <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
-      <form method="POsT">
+     
+        <form action="" method ="POST">
         <div class="input-box">
           <input mame="username" type="text" placeholder="Enter your name">
         </div>
@@ -105,14 +125,14 @@
         <input type="text" name="message" placeholder="Enter your message">
         </div>
         <div class="button">
-          <input type="button" name="submit" value="Send Now" >
+          <input type="button" name="submit" value="Send Now">
         </div>
       </form>
     </div>
     </div>
   </div>
 
-
+  
 
 
 
@@ -132,27 +152,6 @@
     </footer>
 
 </body>
-<?php 
-    // include(db.php);
 
-    if(isset($_POST["submit"])){
-        $name =$_POST["username"];
-        $email =$_POST["email"];
-        $phone =$_POST["phone"];
-        $message =$_POST["message"];
 
-        $sql  = "INSERT INTO Contact (uname, utel_number, uemail, message_details)
-        VALUES ('$name', '$phone', '$mail','$message')";
-
-       $result= $conn->query($sql);
-
-       if($result){
-        echo "<script> alert('message sent');</script>";
-       }
-       else{
-            echo "<script> alert('message failed to send');</script>";
-       }
-    }
-
-?>
 </html>

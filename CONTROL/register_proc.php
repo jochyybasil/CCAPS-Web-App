@@ -1,8 +1,11 @@
 <?php
 include "../MODEL\db.php";
 
+echo "you've reached proc";
 // create customer account
-if(isset($_POST["register"])){
+if(isset($_POST["Register"])){
+
+    echo "submitted through register";
 
     $first_name = $_POST["fname"];
     $last_name = $_POST["lname"];
@@ -39,7 +42,7 @@ if(isset($_POST["register"])){
         }
         else{
             echo '<script> alert("Please enter the same password")</script>';
-            echo "register.php";
+            header("Location: register.php");
             exit();
         }
     }

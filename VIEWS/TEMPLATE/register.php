@@ -71,7 +71,7 @@
                         </select>
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
                         <input type="password" id="con_pass" name="confirm_pass" placeholder="Repeat Password" required><br>
-                        <input type="submit" id="register" name = "register" value = "Register" class="registerbtn" onclick="emailVaidation()">
+                        <input type="submit" id="register" name = "register" value = "Register" class="registerbtn" onclick="return emailValidation()">
                     </form>
                     <p style="padding:10px;" id="redirect-login">Already have an account?<a href="login.php">Log In</a></p>
                 </div>
@@ -86,11 +86,14 @@
             var student_councelor = document.getElementById('user_type');
 			var pass = document.getElementById('pass');
             var con_pass = document.getElementById('confirm_pass');
-
 			var regbutton = document.getElementById('register');
 
-            var url = "http://localhost/MindScope-Web-App/CONTROL/register_proc.php"
+            var ajax = new XMLHttpRequest();
+
+
+            var url = "http://localhost/MindScope-Web-App/CONTROL/register_proc.php";
             function emailValidation(){
+
 			var mailreg = /^((?!\.)[\w_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])/;
 
 			if(mailreg.test(uemail.value)){
@@ -106,34 +109,44 @@
             }
 
         function handleAjax(){
-            
+            //alert("about ready to post");
+
 			ajax.onreadystatechange = handler;
 
+
             //make a request
-            ajax.open('POST', url);
+            ajax.open('POST', "http://localhost/MindScope-Web-App/CONTROL/register_proc.php");
+
+
 
             //create parameters
-            const params = 'fname='+firstName+'&lname='+lastName+'&email='+uemail+'&user_type='+student_councelor+'&pass='+pass+'&confirm_pass='+con_pass+'&register='+regbutton;
+            // const params = 'fname='+firstName.value+'&lname='+lastName.value+'&email='+uemail.value+'&user_type='+student_councelor.value+'&pass='+pass.value+'&confirm_pass='+con_pass.value+'&register='+regbutton.value;
+
+            const params_2 = `register=${encodeURIComponent(regbutton.value)}&fname=${encodeURIComponent(firstName.value)}&lname=${encodeURIComponent(lastName.value)}&email=${encodeURIComponent(uemail.value)}&user_type=${encodeURIComponent(student_councelor.value)}`;
+
+            //  &user_type=${encodeURIComponent(student_councelor.value)} &pass=${encodeURIComponent(pass.value)}&confirm_pass=${encodeURIComponent(con_pass.value)}
 
             ajax.setRequestHeader(
                 "Content-Type",
                 "application/x-www-form-urlencoded"
             );
-            ajax.send(params)
+            ajax.send(params_2);
 
         }
 
         function handler() {
+           // alert("about ready to post 2");
+
   				// Process the server response here.
   				if (ajax.readyState === XMLHttpRequest.DONE) {
 				  // Everything is good, the response was received.
   					if (ajax.status === 200) {
 					  // Perfect!
-  						alert('successfully register')
+  						alert('successfully register');
   						return false;
 					} else {
 					  // There was a problem with the request.
-						alert('something went wrong')
+						alert('something went wrong');
 						return false;
 					  // For example, the response may have a 404 (Not Found)
 					  // or 500 (Internal Server Error) response code.
