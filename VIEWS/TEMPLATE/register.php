@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="">
-        <meta>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Register</title>
         <link rel="stylesheet" href="CSS/stylesheet.css" <?php echo time(); ?>>
         <link rel="stylesheet" href="CSS/register.css?" <?php echo time(); ?>>
@@ -84,8 +84,8 @@
 			var lastName = document.getElementById('lname');
 			var uemail = document.getElementById('email');
             var student_councelor = document.getElementById('user_type');
-			var pass = document.getElementById('pass');
-            var con_pass = document.getElementById('confirm_pass');
+			var passd = document.getElementById('pass');
+            var con_pass = document.getElementById('con_pass');
 			var regbutton = document.getElementById('register');
 
             var ajax = new XMLHttpRequest();
@@ -122,7 +122,7 @@
             //create parameters
             // const params = 'fname='+firstName.value+'&lname='+lastName.value+'&email='+uemail.value+'&user_type='+student_councelor.value+'&pass='+pass.value+'&confirm_pass='+con_pass.value+'&register='+regbutton.value;
 
-            const params_2 = `register=${encodeURIComponent(regbutton.value)}&fname=${encodeURIComponent(firstName.value)}&lname=${encodeURIComponent(lastName.value)}&email=${encodeURIComponent(uemail.value)}&user_type=${encodeURIComponent(student_councelor.value)}`;
+            const params_2 = `register=${encodeURIComponent(regbutton.value)}&fname=${encodeURIComponent(firstName.value)}&lname=${encodeURIComponent(lastName.value)}&email=${encodeURIComponent(uemail.value)}&user_type=${encodeURIComponent(student_councelor.value)}&pass=${encodeURIComponent(pass.value)}&confirm_pass=${encodeURIComponent(con_pass.value)}`;
 
             //  &user_type=${encodeURIComponent(student_councelor.value)} &pass=${encodeURIComponent(pass.value)}&confirm_pass=${encodeURIComponent(con_pass.value)}
 
@@ -143,6 +143,7 @@
   					if (ajax.status === 200) {
 					  // Perfect!
   						alert('successfully register');
+                          //window.location.href = "login.php";
   						return false;
 					} else {
 					  // There was a problem with the request.
