@@ -103,7 +103,7 @@
 				return false;
 			}
 			else{
-				alert('email is not vald');
+				alert('email is not valid');
 				return false;
 			}
             }

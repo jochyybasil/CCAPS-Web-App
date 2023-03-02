@@ -3,6 +3,7 @@ include "../MODEL\db.php";
 
 //echo "you've reached proc\n";
 
+ob_start();
 // create customer account
 if(isset($_POST["register"])){
 
@@ -62,13 +63,9 @@ if(isset($_POST["register"])){
                     exit();
                 }
                 else{
-<<<<<<< HEAD
                     
            
                    header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
-=======
-                   header("Location: ../VIEWS/TEMPLATE/login.php");
->>>>>>> 0d7b4ff3888bf6c6a06dcde046cf5d81697c487c
                    exit();
                 }
                  
