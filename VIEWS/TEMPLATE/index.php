@@ -115,7 +115,7 @@
 
     <!-- picturetext box -->
     <div class="container" style="margin-top: 80px;">
-    <div class="row g-0">
+        <div class="row g-0">
         <div class="col d-flex align-items-center" style="background-color: #ccc;">
             <div class="box-with-picture d-flex" style="height: 300px;">
                 <div class=" picture-container" style="width: 50%; height: 100%; background-size: cover;">
@@ -136,26 +136,26 @@
 
     <!-- circles -->
     <div class="container-fluid" style="display: flex; flex-wrap: wrap; justify-content: center; margin:20px; margin-top: 80px; margin-bottom: 80px; font-weight:bolder;">
-        <div class="row" style="color:white;">
-            <div class="col" style="display:inline-flex;">
-                <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
-                    <a href="booking.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Make a booking</a>
-                </div>
-                <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
-                    <a href="messaging.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Anonymous messaging</a>
-                </div>
-                <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
-                    <a href="resources.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Resources</a>
-                </div>
-                <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
-                    <a href="events.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Events</a>
-                </div>
-                <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
-                    <a href="blogs.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Blogs</a>
-                </div>
+    <div class="row" style="color:white;">
+        <div class="col" style="display:inline-flex; flex-wrap: wrap; justify-content: center;">
+            <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
+                <a href="booking.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Make a booking</a>
+            </div>
+            <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
+                <a href="messaging.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Anonymous messaging</a>
+            </div>
+            <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
+                <a href="resources.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Resources</a>
+            </div>
+            <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
+                <a href="events.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Events</a>
+            </div>
+            <div class="circle" style="background-color: rgba(146, 15, 6); width: 100px; height: 100px; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0 30px 20px 30px;">
+                <a href="blogs.php" style="font-size: 15px; text-align: center; text-decoration: none; color:white;">Blogs</a>
             </div>
         </div>
     </div>
+</div>
     
 
   <!-- footer -->
