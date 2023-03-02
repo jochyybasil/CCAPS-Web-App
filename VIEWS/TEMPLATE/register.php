@@ -14,7 +14,7 @@
             <div class="row g-0">
                 <div class="col">
                     <div class="box">
-                        <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                        <a href="../../index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                 </div>
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a href="index.php" class="nav-link" aria-current="page">Home</a>
+                        <a href="../../index.php" class="nav-link" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a href="about.php" class="nav-link ">About</a>
@@ -60,7 +60,7 @@
             </div>
             <div class="register_background">
                 <div class="register">
-                    <form class="form_register" >
+                    <form class="form_register" action='<?php echo $_SERVER["PHP_SELF"];?>'>
                         <input type="text" id="fname" name="fname" placeholder="First name" required><br>
                         <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
                         <input type="email" id="email" name="email" placeholder="Email" required><br>

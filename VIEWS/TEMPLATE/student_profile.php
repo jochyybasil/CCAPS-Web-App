@@ -17,7 +17,7 @@
         <div class="row g-0">
             <div class="col">
                 <div class="box">
-                    <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                    <a href="../../index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
                 </div>
             </div>
         </div>
@@ -28,9 +28,7 @@
         <div class="container-fluid d-flex justify-content-between">
 
         <div class="d-flex">
-            <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
-            <span class="mx-3">|</span>
-            <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
+           
         </div>
 
               
@@ -38,7 +36,7 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link active" aria-current="page">Home</a>
+                    <a href="../../index.php" class="nav-link active" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">About</a>
@@ -63,37 +61,38 @@
 
  
 
-<div class="profile-pic-container">
- <div class="profile-pic"> </div>
-</div>
- 
-<div class="profile-info-container info-content" style="padding-left:20px; padding-top:10px;"> 
-	<label> Name: </label>
-	<input name="user_name" value="John Doe" type="text">
-	<br>
-	
-	<label> Gender: </label>
-	<input name="user_gender" value="M" type="text">
+    <div class="profile-pic-container">
+        <div class="profile-pic">
+            
+        </div>
+    </div>
+    <form action="http://localhost/MindScope-Web-App/CONTROL/student_proc" method="POST">
+        <div class="profile-info-container info-content" style="padding-left:20px; padding-top:10px;"> 
+            <label> First Name: </label>
+            <input name="user_fname" value="<?php echo $row['userFname']; ?>" type="text">
+            <br>
+            <label>Last Name: </label>
+            <input name="user_lname" value="<?php echo $row['userLname']; ?>" type="text">
+            <br>
+            
+            <label> Gender: </label>
+            <input name="user_gender" value="<?php echo $row['gender']; ?>" type="text">
 
-	<br>
-	<label> Mobile: </label>
-	<input name="user_phone" value="+233 222 222 2222" type="text">
-
-	<br>
-	<label> Email: </label>
-	<input name="user_emial" value="john.doe@ashesi.edu.gh" type="text">
-
-	<br>
-	<label> Major: </label>
-	<input name="user_major" value="Computer Science" type="text">
-	<label>Year Group: </label>
-	<input name="user-year-group" value="2024" type="text"><br>
-	
-	
-	<p class="edit-profile-text"><a href="index.php" style="text-decoration:none;">Edit Profle</a></p>
+            <br>
+            <label> Mobile: </label>
+            <input name="user_phone" value="<?php echo $row['phone_number']; ?>" type="text">
 
 
-</div>
+            <br>
+            <label> Major: </label>
+            <input name="user_major" value="<?php echo $row['department']; ?>" type="text">
+            
+            <br>
+            <input type="submit" class="edit-profile-text" value ="Edit Profle" ></p>
+
+
+        </div>
+    </form>
 </body>
 
 </html>

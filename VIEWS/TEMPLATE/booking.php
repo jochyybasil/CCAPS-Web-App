@@ -30,7 +30,7 @@
             </div>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link" aria-current="page">Home</a>
+                    <a href="../../index.php" class="nav-link" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">About</a>

@@ -77,7 +77,7 @@
         <div class="row g-0">
             <div class="col">
                 <div class="box">
-                    <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                    <a href="../../index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
                 </div>
             </div>
         </div>
