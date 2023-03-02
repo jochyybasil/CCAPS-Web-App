@@ -1,7 +1,3 @@
-<? php 
-  include "../MODEL\db.php";
-  include  "../MODEL\session.php";
-?>
 
 
 <!DOCTYPE html>
@@ -60,14 +56,16 @@
 </header>
 <body>
 
- 
-    <? php
+    <?php
+      include "db.php";
+
      $query = "SELECT * FROM user_profile WHERE web_userID = '$loggedin_id' ";
-    echo"jochy";
      //execute the query 
      $result = $conn->query($query);
      if ($result) {
          $row = mysqli_fetch_assoc($result);
+         $mane = $row['userFname'];
+         echo "$mane";
       }
    ?>
 
