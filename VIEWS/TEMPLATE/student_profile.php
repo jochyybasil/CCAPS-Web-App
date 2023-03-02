@@ -112,7 +112,7 @@
             <input name="user_major" value="<?php echo $row['department']; ?>" type="text">
             
             <br>
-            <input type="submit" class="edit-profile-text" value ="Edit Profle" ></p>
+            <input type="submit" class="edit-profile-text" value ="Edit Profile" ></p>
 
 
         </div>
