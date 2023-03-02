@@ -60,12 +60,15 @@
 <body>
 
  
-    <!-- <? php
-      $select = mysqli_query($conn, "SELECT * FROM `user_profile` WHERE web_userID = '$loggedin_id'");
-      if(mysqli_num_rows($select) > 0){
-         $fetch = mysqli_fetch_assoc($select);
+    <? php
+     $query = "SELECT * FROM user_profile WHERE web_userID = '$loggedin_id' ";
+    echo"jochy";
+     //execute the query 
+     $result = $conn->query($query);
+     if ($result) {
+         $row = mysqli_fetch_assoc($result);
       }
-   ?> -->
+   ?>
 
     <form method="post">  
     <div class="profile-pic-container">
