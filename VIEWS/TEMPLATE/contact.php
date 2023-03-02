@@ -1,5 +1,5 @@
-<?php 
-  include ($_SERVER['DOCUMENT_ROOT'].'/MODEL/db.php');
+<? php 
+  include "../MODEL\db.php";
 ?>
 <?php 
     if(isset($_POST["submit"])){
