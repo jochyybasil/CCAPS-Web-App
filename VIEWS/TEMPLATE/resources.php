@@ -12,11 +12,13 @@
 
     <style>
 		.container {
-			display: flex;
+			display: inline-block;
 			flex-wrap: wrap;
 			justify-content: space-evenly;
 			align-items: center;
 			margin: 20px;
+            padding: 15px;
+            
 		}
 		.square {
 			width: 200px;
