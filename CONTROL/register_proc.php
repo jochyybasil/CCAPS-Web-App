@@ -27,6 +27,7 @@ if(isset($_POST["register"])){
     $check_sql = "SELECT email_address FROM Web_user WHERE email_address ='$mail' LIMIT 1 ";
     $check_result = $conn->query($check_sql);
     if($check_result->num_rows == 1) {
+        // echo "<script>alert('Email already exists');</script>";
         header("Location: ../VIEWS/TEMPLATE/register.php");
         exit();
     }
@@ -57,30 +58,28 @@ if(isset($_POST["register"])){
             
             if($result){
                 if ($status == 1){
-                    header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/dashboard.php");
+                    header("Location: ../VIEWS/TEMPLATE/dashboard.php");
                     exit();
                 }
                 else{
+<<<<<<< HEAD
                     
            
                    header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
+=======
+                   header("Location: ../VIEWS/TEMPLATE/login.php");
+>>>>>>> 0d7b4ff3888bf6c6a06dcde046cf5d81697c487c
                    exit();
                 }
                  
             }
             else{
-                // echo "did not make it ";
-                // echo '<script> alert("Please enter the same password")</script>';
+                // echo '<script> alert("Enter the same password")</script>';
                 header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
                 exit();
             }
         }
 
-
-
     }
-
-
-    
 }
 ?>
