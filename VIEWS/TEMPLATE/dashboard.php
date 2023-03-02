@@ -118,7 +118,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div style="color:rgba(146, 15, 6);">
-                                BOOKINGS (Monthly)</div>
+                                INDIVIDUAL BOOKINGS (Monthly)</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">500</div>
                         </div>
                         <div class="col-auto">
@@ -135,7 +135,7 @@
                     <div class="row no-gutters align-items-center">
                         <div class="col mr-2">
                             <div style="color:rgba(146, 15, 6);">
-                                MESSAGES (Monthly)</div>
+                                GROUP THERAPY BOOKINGS (Monthly)</div>
                             <div class="h5 mb-0 font-weight-bold text-gray-800">1000</div>
                         </div>
                         <div class="col-auto">
