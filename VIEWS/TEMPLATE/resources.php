@@ -93,7 +93,7 @@
 </header>
 <body>
 
-<div class="container">
+<div class="container d-flex">
     <div class="square">
         <img src="IMAGES/counsellor_icon.png" alt="Peer Counsellors icon" class="icon">
         <a href="https://www.ashesi.edu.gh" style="color:white; font-weight:bolder;">Peer Counsellors</a>
