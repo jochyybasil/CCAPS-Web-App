@@ -45,7 +45,7 @@
         <div class="row g-0">
             <div class="col">
                 <div class="box">
-                    <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                    <a href="../../index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
                 </div>
             </div>
         </div>
@@ -63,7 +63,7 @@
 
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="index.php" class="nav-link" aria-current="page">Home</a>
+                    <a href="../../index.php" class="nav-link" aria-current="page">Home</a>
                 </li>
                 <li class="nav-item">
                     <a href="about.php" class="nav-link">About</a>
