@@ -1,14 +1,9 @@
 <?php
-include "../MODEL\db.php";
+ob_start(); // start output buffering
+include "../MODEL/db.php";
 
-//echo "you've reached proc\n";
-
-ob_start();
 // create customer account
 if(isset($_POST["register"])){
-
-    //echo "submitted through register\n";
-
     $first_name = $_POST["fname"];
     $last_name = $_POST["lname"];
     $mail = $_POST["email"];
@@ -28,8 +23,7 @@ if(isset($_POST["register"])){
     $check_sql = "SELECT email_address FROM Web_user WHERE email_address ='$mail' LIMIT 1 ";
     $check_result = $conn->query($check_sql);
     if($check_result->num_rows == 1) {
-        // echo "<script>alert('Email already exists');</script>";
-        header("Location: ../VIEWS/TEMPLATE/register.php");
+        header("Location: ../VIEWS/register.php");
         exit();
     }
     else{
@@ -41,42 +35,36 @@ if(isset($_POST["register"])){
 
             $result= $conn->query($login_sql);
 
-
-
             $getUser_id = "SELECT web_UserID from  web_user where email_address ='$mail' ";
             $result_2 = $conn->query($getUser_id);
             if(mysqli_num_rows($result_2) > 0){
                 $row = mysqli_fetch_assoc($result_2);
                 $savedUser_id = $row['web_UserID'];
-                echo "$savedUser_id";
-                }
+            }
 
-       
-                    $userProflie_sql = "INSERT INTO user_profile (web_UserID, userFname, userLname, email_address) VALUES ('$savedUser_id','$first_name', '$last_name', '$mail') ";
-                   $userProfile_result = $conn->query($userProflie_sql);
+            $userProflie_sql = "INSERT INTO user_profile (web_UserID, userFname, userLname, email_address) 
+            VALUES ('$savedUser_id','$first_name', '$last_name', '$mail') ";
+            $userProfile_result = $conn->query($userProflie_sql);
 
-
-            
             if($result){
                 if ($status == 1){
-                    header("Location: ../VIEWS/TEMPLATE/dashboard.php");
+                    header("Location: ../VIEWS/dashboard.php");
                     exit();
                 }
                 else{
-                    
-           
-                   header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
-                   exit();
+                    header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
+                    exit();
                 }
                  
             }
             else{
-                // echo '<script> alert("Enter the same password")</script>';
                 header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
                 exit();
             }
         }
-
     }
 }
+
+ob_end_flush(); // flush output buffer
 ?>
+
