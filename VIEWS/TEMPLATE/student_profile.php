@@ -1,3 +1,8 @@
+<? php 
+  include "../MODEL\db.php";
+  include  "../MODEL\session.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
-    <link rel="stylesheet" href="CSS/stylesheet.css? <?php echo time(); ?>">
+    <link rel="stylesheet" href="stylesheet.css">
     <link rel="stylesheet" href="home_page/stylesheet.css?<?php echo time(); ?>">
     <link rel="stylesheet" href="CSS/profile.css? <?php echo time(); ?>">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
@@ -30,10 +35,6 @@
         <div class="d-flex">
            
         </div>
-
-              
-
-
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a href="index.php" class="nav-link active" aria-current="page">Home</a>
@@ -58,17 +59,28 @@
     </nav>
 </header>
 <body>
-
+    <div>
  
+    <?php
+      $select = mysqli_query($conn, "SELECT * FROM `user_form` WHERE id = '$user_id'") or die('query failed');
+      if(mysqli_num_rows($select) > 0){
+         $fetch = mysqli_fetch_assoc($select);
+      }
+   ?>
+
     <form method="post">  
     <div class="profile-pic-container">
         <div class="profile-pic">
-            
+        <style>
+         /* echo '<img src="uploaded_img/'.$fetch['image'].'">'; */
+         
+        </style>
+         
         </div>
         <div class="info-content">
         <br>
-        <span>Update your photo :</span>
-            <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png">
+        <span>update your pic :</span>
+            <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
         </div>
     </div>
     </form>
@@ -89,17 +101,19 @@
             <label> Mobile: </label>
             <input name="user_phone" value="<?php echo $row['phone_number']; ?>" type="text">
 
-
             <br>
             <label> Major: </label>
             <input name="user_major" value="<?php echo $row['department']; ?>" type="text">
             
             <br>
-            <input type="submit" class="edit-profile-text" value ="Edit Profile" ></p>
+            <input type="submit" class="edit-profile-text" value ="Edit Profle" ></p>
 
 
         </div>
     </form>
+
+
+    </div>
 </body>
 
 </html>
