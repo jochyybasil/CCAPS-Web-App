@@ -98,12 +98,10 @@
 
 			if(mailreg.test(uemail.value)){
 				// mailreg.test(uemail.match)
-				alert('email is vald');
 				handleAjax();
 				return false;
 			}
 			else{
-				alert('email is not valid');
 				return false;
 			}
             }
@@ -142,12 +140,10 @@
 				  // Everything is good, the response was received.
   					if (ajax.status === 200) {
 					  // Perfect!
-  						alert('successfully register');
                           //window.location.href = "login.php";
   						return false;
 					} else {
 					  // There was a problem with the request.
-						alert('something went wrong');
 						return false;
 					  // For example, the response may have a 404 (Not Found)
 					  // or 500 (Internal Server Error) response code.
