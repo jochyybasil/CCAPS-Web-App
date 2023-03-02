@@ -1,6 +1,5 @@
 <?php
 
-
 include "../MODEL\db.php";
 
 // check if login form was submitted, else redirect/return back to login page
@@ -47,8 +46,9 @@ if (isset($_POST['login'])){
 
             // start a session
             session_start();
-            $_SESSION["us_id"] = $user_id;
-            $_SESSION["us_email"] = $user_email;
+            $_SESSION["login_id"] = $user_id;
+            $_SESSION["login_user"] = $user_email;
+            $_SESSION['success'] = "You are logged in";
 
             // if user role is admin send to adimpage
             if ($user_status == 1){
