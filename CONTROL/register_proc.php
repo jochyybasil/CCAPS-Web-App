@@ -3,6 +3,7 @@ include "../MODEL\db.php";
 
 //echo "you've reached proc\n";
 
+ob_start();
 // create customer account
 if(isset($_POST["register"])){
 
