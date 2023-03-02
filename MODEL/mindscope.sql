@@ -29,6 +29,7 @@ CREATE TABLE User_profile(
     email_address varchar(60) NOT NULL UNIQUE,
     department varchar(50) NOT NULL,
     gender varchar(6) NOT NULL,
+    user_image blob , 
     FOREIGN KEY (web_userID) REFERENCES Web_user(web_userID)
     
     
