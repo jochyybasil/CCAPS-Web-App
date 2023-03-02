@@ -60,7 +60,7 @@
             </div>
             <div class="register_background">
                 <div class="register">
-                    <form class="form_register" >
+                    <form class="form_register" action='<?php echo $_SERVER["PHP_SELF"];?>'>
                         <input type="text" id="fname" name="fname" placeholder="First name" required><br>
                         <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
                         <input type="email" id="email" name="email" placeholder="Email" required><br>
