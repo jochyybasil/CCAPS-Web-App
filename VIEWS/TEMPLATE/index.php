@@ -10,55 +10,57 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </head>
-<header>
-    <!-- top text -->
-    <div class="container-fluid">
-        <div class="row g-0">
-            <div class="col">
-                <div class="box">
-                    <a href="../../index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+<body>
+    <!-- header section -->
+    <header>
+        <!-- top text -->
+        <div class="container-fluid">
+            <div class="row g-0">
+                <div class="col">
+                    <div class="box">
+                        <a href="index.php" class="toptext nav-link" style="text-decoration: none; padding:14px;">MindScope</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    
+        <!-- navigation bar -->
+        <nav class="navbar navbar-expand">
+            <div class="container-fluid d-flex justify-content-between">
+    
+            <div class="d-flex">
+                <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
+                <span class="mx-3">|</span>
+                <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
+            </div>
+    
+                  
+    
+    
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.php" class="nav-link active" aria-current="page">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.php" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.php" class="nav-link">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="events.php" class="nav-link">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resources.php" class="nav-link">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="blogs.php" class="nav-link">Blogs</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-    <!-- navigation bar -->
-    <nav class="navbar navbar-expand">
-        <div class="container-fluid d-flex justify-content-between">
-
-        <div class="d-flex">
-            <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
-            <span class="mx-3">|</span>
-            <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
-        </div>
-
-              
-
-
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a href="../../index.php" class="nav-link active" aria-current="page">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.php" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="services.php" class="nav-link">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a href="events.php" class="nav-link">Events</a>
-                </li>
-                <li class="nav-item">
-                    <a href="resources.php" class="nav-link">Resources</a>
-                </li>
-                <li class="nav-item">
-                    <a href="blogs.php" class="nav-link">Blogs</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-</header>
-<body>
 
     <!-- counselling picture header-->
     <div class="container-fluid">
@@ -76,7 +78,6 @@
           </div>
         </div>
     </div>
-      
 
 
     <!-- cards -->
@@ -112,21 +113,21 @@
     </section>
 
 
-
     <!-- picturetext box -->
     <div class="container" style="margin-top: 80px;">
         <div class="row g-0">
-        <div class="col d-flex align-items-center" style="background-color: #ccc;">
-            <div class="box-with-picture d-flex" style="height: 300px;">
-                <div class=" picture-container" style="width: 50%; height: 100%; background-size: cover;">
-                    <img src="IMAGES/index_contact_box.webp" alt="Picture" style="width: 100%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="text-container d-flex flex-column justify-content-center" style="width: 50%; text-align: center;">
-                    <p style="font-size: larger; font-weight:bolder; padding-right: 10px;">Our mission is to promote students' well-being within a safe and confidential environment through a range of psychological support and consultation services.</p>
-                    <div class="d-flex justify-content-center mt-3">
-                        <a href="about.php" class="btn btn-primary mr-3" style="background-color: white; border-color: white; color:black;">Read More</a>
-                        <span style="width: 10px;"></span>
-                        <a href="contact.php" class="btn btn-primary" style="background-color: rgba(146, 15, 6); border-color: rgba(146, 15, 6); color:white;">Contact Us</a>
+            <div class="col d-flex align-items-center" style="background-color: #ccc;">
+                <div class="box-with-picture d-flex" style="height: 300px;">
+                    <div class=" picture-container" style="width: 50%; height: 100%; background-size: cover;">
+                        <img src="IMAGES/index_contact_box.webp" alt="Picture" style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="text-container d-flex flex-column justify-content-center" style="width: 50%; text-align: center;">
+                        <p style="font-size: larger; font-weight:bolder; padding-right: 10px;">Our mission is to promote students' well-being within a safe and confidential environment through a range of psychological support and consultation services.</p>
+                        <div class="d-flex justify-content-center mt-3">
+                            <a href="about.php" class="btn btn-primary mr-3" style="background-color: white; border-color: white; color:black;">Read More</a>
+                            <span style="width: 10px;"></span>
+                            <a href="contact.php" class="btn btn-primary" style="background-color: rgba(146, 15, 6); border-color: rgba(146, 15, 6); color:white;">Contact Us</a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,22 +156,23 @@
             </div>
         </div>
     </div>
-</div>
-    
+    </div>
 
-  <!-- footer -->
-  <footer class="bg-dark py-3">
+
+
+    <!-- footer -->
+    <footer class="bg-dark py-3">
         <div class="container">
-          <div class="row">
+        <div class="row">
             <div class="col-md-6">
-              <p>&copy; 2023 MindScope Live. All Rights Reserved.</p>
+            <p>&copy; 2023 MindScope Live. All Rights Reserved.</p>
             </div>
             <div class="col-md-6">
-              <ul class="list-unstyled float-md-end">
+            <ul class="list-unstyled float-md-end">
                 <li><a href="contact.php">Contact Us</a></li>
-              </ul>
+            </ul>
             </div>
-          </div>
+        </div>
         </div>
     </footer>
 </body>
