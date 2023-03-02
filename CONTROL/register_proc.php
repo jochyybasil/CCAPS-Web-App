@@ -33,17 +33,36 @@ if(isset($_POST["register"])){
     else{
         if($confirm_passw == $passw){
 
+            // insert into user table
             $login_sql="INSERT INTO Web_user (userFname, userLname, email_address, user_status, user_password)
              VALUES ('$first_name', '$last_name', '$mail','$status', '$encrypted_pass')";
-    
+
             $result= $conn->query($login_sql);
-    
+
+
+
+            $getUser_id = "SELECT web_UserID from  web_user where email_address ='$mail' ";
+            $result_2 = $conn->query($getUser_id);
+            if(mysqli_num_rows($result_2) > 0){
+                $row = mysqli_fetch_assoc($result_2);
+                $savedUser_id = $row['web_UserID'];
+                echo "$savedUser_id";
+                }
+
+       
+                    $userProflie_sql = "INSERT INTO user_profile (web_UserID, userFname, userLname, email_address) VALUES ('$savedUser_id','$first_name', '$last_name', '$mail') ";
+                   $userProfile_result = $conn->query($userProflie_sql);
+
+
+            
             if($result){
                 if ($status == 1){
                     header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/dashboard.php");
                     exit();
                 }
                 else{
+                    
+           
                    header("Location: http://localhost/MindScope-Web-App/VIEWS/TEMPLATE/login.php");
                    exit();
                 }

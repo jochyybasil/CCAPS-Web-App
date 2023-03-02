@@ -60,13 +60,20 @@
 <body>
 
  
-
+    <form method="post">  
     <div class="profile-pic-container">
         <div class="profile-pic">
             
         </div>
+        <div class="info-content">
+        <br>
+        <span>update your pic :</span>
+            <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" class="box">
+        </div>
     </div>
-    <form action="http://localhost/MindScope-Web-App/CONTROL/student_proc" method="POST">
+    </form>
+
+    <form action="http://localhost/MindScope-Web-App/CONTROL/student_proc.php" method="POST">
         <div class="profile-info-container info-content" style="padding-left:20px; padding-top:10px;"> 
             <label> First Name: </label>
             <input name="user_fname" value="<?php echo $row['userFname']; ?>" type="text">
