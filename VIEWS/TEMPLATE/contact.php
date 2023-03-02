@@ -28,7 +28,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Contact Us</title>
     <link rel="stylesheet" href="CSS/stylesheet.css?"<?php echo time(); ?>>
     <link rel="stylesheet" href="CSS/contact.css?"<?php echo time(); ?>>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">            
@@ -104,7 +104,7 @@
         <div class="email details">
           <i class="fas fa-envelope" style="color:brown;"></i>
           <div class="topic">Email</div>
-          <div class="text-one">MinScope.live@gmail.com</div>
+          <div class="text-one">MindScope.live@gmail.com</div>
         </div>
       </div>
       <div class="right-side">
