@@ -1,9 +1,5 @@
-Drop database if exists MindScope;
-
 Create database MindScope;
 Use Mindscope;
-
-
 
 
 CREATE TABLE Web_user (
