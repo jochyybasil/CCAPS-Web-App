@@ -28,9 +28,18 @@
     <nav class="navbar navbar-expand">
         <div class="container-fluid d-flex justify-content-between">
 
-            <div class="d-flex">
-
-             </div>
+        <?php
+            if(isset($loggedin_session)){
+                echo '<div class="d-flex">
+                <a class="nav-link text-nowrap text-truncate" href="student_profile.php">My Profile</a>
+                <span class="mx-3">|</span>
+                <a class="nav-link text-nowrap text-truncate" href="logout.php">Logout</a>
+            </div>';
+            }else{
+                echo '<div class="d-flex">
+            </div>';
+            }
+        ?>
               
 
 
