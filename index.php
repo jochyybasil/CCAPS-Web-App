@@ -27,12 +27,28 @@
         <!-- navigation bar -->
         <nav class="navbar navbar-expand">
             <div class="container-fluid d-flex justify-content-between">
-    
-            <div class="d-flex">
+
+            <?php
+            if(!isset($loggedin_session)){
+                echo '<div class="d-flex">
                 <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
                 <span class="mx-3">|</span>
                 <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
-            </div>
+            </div>';
+            }else{
+                echo '<div class="d-flex">
+                <a class="nav-link text-nowrap text-truncate" href="register.php">My Profile</a>
+                <span class="mx-3">|</span>
+                <a class="nav-link text-nowrap text-truncate" href="login.php">Logout</a>
+            </div>';
+            }
+            ?>
+    
+            <!-- <div class="d-flex">
+                <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
+                <span class="mx-3">|</span>
+                <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
+            </div> -->
     
                   
     
