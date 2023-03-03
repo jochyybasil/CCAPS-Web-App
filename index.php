@@ -41,9 +41,9 @@
             </div>';
             }else{
                 echo '<div class="d-flex">
-                <a class="nav-link text-nowrap text-truncate" href="register.php">My Profile</a>
+                <a class="nav-link text-nowrap text-truncate" href="student_profile.php">My Profile</a>
                 <span class="mx-3">|</span>
-                <a class="nav-link text-nowrap text-truncate" href="login.php">Logout</a>
+                <a class="nav-link text-nowrap text-truncate" href="logout_proc.php">Logout</a>
             </div>';
             }
             ?>
