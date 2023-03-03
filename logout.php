@@ -1,6 +1,6 @@
 <?php
- include "../MODEL\db.php";
- include  "../MODEL\session.php";
+ include "db.php";
+ include  "session.php";
 
 session_start();
 //destroy the session
