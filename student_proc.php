@@ -10,9 +10,8 @@
     $gender =  $_POST['user_gender'];
     $phoneN =  $_POST['user_phone'];
     $major =  $_POST['user_major'];
-    $phone = $_FILES["update_image"]
 
-    $sql = "UPDATE user_profile SET userFname='$fname', userLname='$lname', gende WHERE id=2";
+    $sql = "UPDATE user_profile SET userFname='$fname', userLname='$lname', gender='$gender', phone_number='$phoneN', department='$major' WHERE web_userID = $loggedin_userID";
 
     if ($conn->query($sql) === TRUE) {
     echo "Record updated successfully";
@@ -29,7 +28,7 @@
         if($update_image_size > 2000000){
             $message[] = 'image is too large';
         }else{
-            $image_update_query = mysqli_query($conn, "UPDATE `user_form` SET image = '$update_image' WHERE id = '$user_id'") or die('query failed');
+            $image_update_query = mysqli_query($conn, "UPDATE `user_profile` SET user_image = '$update_image' WHERE web_userID = $loggedin_userID") or die('query failed');
             if($image_update_query){
                 move_uploaded_file($update_image_tmp_name, $update_image_folder);
             }
