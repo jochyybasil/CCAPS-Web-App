@@ -1,3 +1,7 @@
+<?php
+include session file
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
