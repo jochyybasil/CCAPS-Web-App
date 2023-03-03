@@ -1,3 +1,7 @@
+<?php
+ include "session.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +98,7 @@
                                         <label for="floatingTextarea">Send a message...</label>
                                       </div>
                                       <br>
-                                      <button type="submit" class="btn btn-primary" style="margin-top: 5px;">Send</button>
+                                      <button type="submit" class="btn btn-primary" style="margin-top: 5px;" action="message_proc.php">Send</button>
                                     </div>
                                 </div>
                             </div>
