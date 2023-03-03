@@ -1,5 +1,4 @@
 <?php
-    session_start();
     include('session.php');
 
     // Check if the required form fields are not empty

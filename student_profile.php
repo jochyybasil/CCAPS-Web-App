@@ -67,24 +67,27 @@
      $result = $conn->query($query);
      if ($result) {
          $row = mysqli_fetch_assoc($result);
-         $mane = $row['userFname'];
-         echo "$mane";
       }
    ?>
 
     <form method="post">  
     <div class="profile-pic-container">
         <div class="profile-pic">
-        <!-- <?php
-         if($fetch['user_image'] == ''){
-            // echo '<i class="fa-thin fa-user-tie"></i>';
+        <?php
+        $image = $row['user_image'];
+         if($row['user_image'] == ''){
+            echo '<i class="fa fa-user" aria-hidden="true"></i>';
          }else{
-            echo '<img src="uploaded_img/'.$fetch['user_image'].'">';
+            echo '<img src="uploaded_img/'.$row['image'].'">';
          }
-         ?> -->
+         if(isset($message)){
+            foreach($message as $message){
+               echo '<div class="message">'.$message.'</div>';
+            }
+         }
+      ?>
         <style>
-         /* echo '<img src="uploaded_img/'.$fetch['image'].'">'; */
-         
+#         
         </style>
          
         </div>
@@ -99,25 +102,29 @@
     <form action="http://localhost/MindScope-Web-App/CONTROL/student_proc.php" method="POST">
         <div class="profile-info-container info-content" style="padding-left:20px; padding-top:10px;"> 
             <label> First Name: </label>
-            <input name="user_fname" value="<?php echo $row['userFname']; ?>" type="text">
+            <input name="user_fname" placeholder="First Name" value="<?php echo $row['userFname']; ?>" type="text">
             <br>
             <label>Last Name: </label>
-            <input name="user_lname" value="<?php echo $row['userLname']; ?>" type="text">
-            <br>
+            <input name="user_lname" placeholder="Last Name" value="<?php echo $row['userLname']; ?>" type="text">
             
+            <br>
             <label> Gender: </label>
-            <input name="user_gender" value="<?php echo $row['gender']??"N/A"; ?>" type="text">
+            <input name="user_gender" placeholder="gender" value="<?php echo $row['gender']; ?>" type="text">
+           
+            <br>
+            <label> Date of Birth: </label>
+            <input name="user_dob" placeholder="dob" value="<?php echo $row['DOB']??"N/A"; ?>" type="text">
 
             <br>
             <label> Mobile: </label>
-            <input name="user_phone" value="<?php echo $row['phone_number']; ?>" type="text">
+            <input name="user_phone" placeholder="phone" value="<?php echo $row['phone_number']; ?>" type="text">
 
             <br>
             <label> Major: </label>
-            <input name="user_major" value="<?php echo $row['department']; ?>" type="text">
+            <input name="user_major" placeholder="major" value="<?php echo $row['department']; ?>" type="text">
             
             <br>
-            <input type="submit" class="edit-profile-text" value ="Edit Profile" ></p>
+            <input type="submit" class="edit-profile-text" value ="Update Profile" ></p>
 
 
         </div>
