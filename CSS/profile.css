@@ -11,9 +11,10 @@
 .profile-pic-container{
 
 position: absolute;
-width: 350px;
-height: 557px;
+width: 30%;
+height: 90%;
 left: 10%;
+right: 5%;
 top: 25%;
 
 background: rgba(160, 30, 30, 0.5);
@@ -36,9 +37,9 @@ border-radius: 5px;}
 }
 
 .profile-info-container{
-position: absolute;
-width: 43%;
-height: 563px;
+position: relative;
+width: 50%;
+height: 90%;
 left: 40%;
 top:25%;
 
