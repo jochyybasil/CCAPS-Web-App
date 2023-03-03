@@ -64,7 +64,7 @@
             </div>
             <div class="register_background">
                 <div class="register">
-                    <form class="form_register" action='<?php echo $_SERVER["PHP_SELF"];?>'>
+                    <form class="form_register" action='register_proc.php' method="POST">
                         <input type="text" id="fname" name="fname" placeholder="First name" required><br>
                         <input type="text" id="lname" name="lname" placeholder="Last name" required><br>
                         <input type="email" id="email" name="email" placeholder="Email" required><br>
@@ -75,7 +75,7 @@
                         </select>
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
                         <input type="password" id="con_pass" name="confirm_pass" placeholder="Repeat Password" required><br>
-                        <input type="submit" id="register" name = "register" value = "Register" class="registerbtn" onclick="return emailValidation()">
+                        <input type="submit" id="register" name = "register" value = "Register" class="registerbtn" onclick="emailValidation()">
                     </form>
                     <p style="padding:10px;" id="redirect-login">Already have an account?<a href="login.php">Log In</a></p>
                 </div>
@@ -102,7 +102,7 @@
 
 			if(mailreg.test(uemail.value)){
 				// mailreg.test(uemail.match)
-				handleAjax();
+				// handleAjax();
 				return false;
 			}
 			else{

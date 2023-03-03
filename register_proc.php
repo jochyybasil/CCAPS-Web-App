@@ -23,7 +23,6 @@ if(isset($_POST["register"])){
     $check_result = $conn->query($check_sql);
     if($check_result->num_rows == 1) {
         header("Location: register.php");
-        exit();
     }
     else{
         if($confirm_passw == $passw){
@@ -47,18 +46,15 @@ if(isset($_POST["register"])){
 
             if($result){
                 if ($status == 1){
-                    echo "<script>alert('Successfully Registered');
-                window.location.href = 'dashboard.php';</script>";
+                    header("Location: dashboard.php");
                 }
                 else{
-                    echo "<script>alert('Successfully Registered');
-                window.location.href = 'login.php';</script>";
+                    header("Location: index.php");
                 }
                  
             }
             else{
-                echo "<script>alert('Registration Failed');
-                window.location.href = 'register.php';</script>";
+                header("Location: register.php");
             }
         }
     }

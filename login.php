@@ -72,10 +72,10 @@
             <div class="login_background">
                 <div class="login">
                     <p>Log In</p>
-                    <form class="form_login">
+                    <form class="form_login" method="POST" action="login_proc.php">
                         <input type="email" id="email" name="email" placeholder="Email" required><br>
                         <input type="password" id="pass" name="pass" placeholder="Password" required><br>
-                        <button type="submit"  id= "login" value ="login" name ="login" class="loginbtn" onclick = "return loginValidation()">Log In</button>
+                        <button type="submit"  id= "login" value ="login" name ="login" class="loginbtn" onclick = "loginValidation()">Log In</button>
                     </form>
                     <p id="redirect-signup">Don't have an account?<a href ="register.php">Sign Up</a></p>
                 </div>
@@ -99,7 +99,8 @@
 
             if(mailreg.test(uemail.value)){
                 // mailreg.test(uemail.match)
-                handleAjax();
+                alert('email is vald');
+                //handleAjax();
                 return false;
             }
             else{
@@ -138,22 +139,22 @@
             // alert("about ready to post 2");
 
                 // Process the server response here.
-                if (ajax.readyState === XMLHttpRequest.DONE) {
-                // Everything is good, the response was received.
-                    if (ajax.status === 200) {
-                    // Perfect!
-                        // alert('successfully logged in');
-                        // window.location.href = "index.php";
-                        return false;
-                    } else {
-                    // There was a problem with the request.
-                        alert('something went wrong');
-                        return false;
-                    // For example, the response may have a 404 (Not Found)
-                    // or 500 (Internal Server Error) response code.
-                    }
+                // if (ajax.readyState === XMLHttpRequest.DONE) {
+                // // Everything is good, the response was received.
+                //     if (ajax.status === 200) {
+                //     // Perfect!
+                //         alert('successfully logged in');
+                //         //window.location.href = "login.php";
+                //         return false;
+                //     } else {
+                //     // There was a problem with the request.
+                //         alert('something went wrong');
+                //         return false;
+                //     // For example, the response may have a 404 (Not Found)
+                //     // or 500 (Internal Server Error) response code.
+                //     }
 
-                } 
+                // } 
             }
 
 

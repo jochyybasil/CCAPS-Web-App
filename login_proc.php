@@ -49,20 +49,21 @@ if (isset($_POST['login'])){
             $_SESSION["login_id"] = $user_id;
             $_SESSION["login_user"] = $user_email;
             $_SESSION['success'] = "You are logged in";
+            $_SESSION['status'] = $user_status;
 
             // if user role is admin send to adimpage
             if ($user_status == 1){
+                header('Location: dashboard.php');
                 //echo"redirect to dash";
                 // echo "<script>alert('successfully logged in to dash');
-                // window.location.href = 'dashboard.php';</script>";
+                //window.location.href = 'dashboard.php';</script>";
                 // exit();
                 }
 
             else if ($user_status == 2){
-                //echo"redirect to index";
-                echo "<script>alert('successfully logged in');
-                window.location.href = 'index.php';</script>";
-                //header('Location: index.php');
+                // echo"redirect to index";
+                // echo "<script>window.location.href = 'index.php';</script>";
+                header('Location: index.php');
                 // exit();
                 }
 
