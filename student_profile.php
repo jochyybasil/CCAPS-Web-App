@@ -95,7 +95,7 @@
     </div>
     </form>
 
-    <form action="http://localhost/MindScope-Web-App/CONTROL/student_proc.php" method="POST">
+    <form action="student_proc.php" method="POST">
         <div class="profile-info-container info-content" style="padding-left:20px; padding-top:10px;"> 
             <label> First Name: </label>
             <input name="user_fname" placeholder="First Name" value="<?php echo $row['userFname']; ?>" type="text">
@@ -109,8 +109,9 @@
            
             <br>
             <label> Date of Birth: </label>
-            <input name="user_dob" placeholder="dob" value="<?php echo $row['DOB']??"N/A"; ?>" type="text">
+            <input name="user_dob" placeholder="dob" value="<?php echo $row['DOB']??"N/A"; ?>" type="date">
 
+            <br>
             <br>
             <label> Mobile: </label>
             <input name="user_phone" placeholder="phone" value="<?php echo $row['phone_number']; ?>" type="text">
@@ -120,7 +121,7 @@
             <input name="user_major" placeholder="major" value="<?php echo $row['department']; ?>" type="text">
             
             <br>
-            <input type="submit" class="edit-profile-text" value ="Update Profile" ></p>
+            <input type="submit" class="edit-profile-text" name="update_profile" value ="Update Profile" ></p>
 
 
         </div>
