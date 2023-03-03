@@ -85,20 +85,20 @@
     <form method="post">  
     <div class="profile-pic-container">
         <div class="profile-pic">
-        <?php
-         if($row['user_image'] == ''){
-            echo '<img src="images/default-avatar.png">';
-         }else{
-            echo '<img src="uploaded_img/'.$row['user_image'].'">';
-         }
-         if(isset($message)){
-            foreach($message as $message){
-               echo '<div class="message">'.$message.'</div>';
+            <?php
+            if($row['user_image'] == ''){
+                echo '<img src="images/default-avatar.png" style="border-radius:50%">';
+            }else{
+                echo '<img src="uploaded_img/'.$row['user_image'].'" style="border-radius:50%">';
             }
-         }
-      ?>
-         
+            if(isset($message)){
+                foreach($message as $message){
+                echo '<div class="message">'.$message.'</div>';
+                }
+            }
+            ?>
         </div>
+
         <div class="info-content">
         <br>
         <span>update photo:</span>
