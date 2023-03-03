@@ -1,6 +1,6 @@
 <?php
 
-include "../MODEL\db.php";
+include "db.php";
 
 // check if login form was submitted, else redirect/return back to login page
 if (isset($_POST['login'])){
@@ -52,14 +52,14 @@ if (isset($_POST['login'])){
 
             // if user role is admin send to adimpage
             if ($user_status == 1){
-                echo"redirect to dash";
-                // header('location: dashboard.php');
+                // echo"redirect to dash";
+                header('location: dashboard.php');
                 exit;
                 }
 
             elseif ($user_status == 2){
-                echo"redirect to index";
-            //  header('location: standardindex.php');
+                // echo"redirect to index";
+                header('location: index.php');
                 exit;
                 }
 
@@ -71,8 +71,8 @@ if (isset($_POST['login'])){
 	}
 
     else {
-            echo "back to login";
-	  		// header('location: login.php');
+            // echo "back to login";
+	  		header('location: login.php');
 	  		exit();	  	
         }
 

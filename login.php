@@ -89,7 +89,6 @@
             var ajax = new XMLHttpRequest();
 
 
-            var url = "http://localhost/MindScope-Web-App/CONTROL/register_proc.php";
             function loginValidation(){
 
             var mailreg = /^((?!\.)[\w_.]*[^.])(@\w+)(\.\w+(\.\w+)?[^.\W])/;
@@ -113,7 +112,7 @@
 
 
             //make a request
-            ajax.open('POST', "http://localhost/MindScope-Web-App/CONTROL/login_proc.php");
+            ajax.open('POST', "login_proc.php");
 
 
 

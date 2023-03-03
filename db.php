@@ -3,7 +3,7 @@
 	//database connection parameters
 	$servername = "localhost";
 	$username = "root";
-	$password = "jochy";
+	$password = "";
 	$dbname = "mindscope";
 
 	// Create connection

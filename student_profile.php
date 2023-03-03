@@ -1,4 +1,7 @@
-
+<?php 
+    include "db.php";
+    include "session.php";
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -57,9 +60,9 @@
 <body>
 
     <?php
-      include "db.php";
-
-     $query = "SELECT * FROM user_profile WHERE web_userID = '$loggedin_id' ";
+      
+      
+     $query = "SELECT * FROM user_profile WHERE web_userID = '$loggedin_userID' ";
      //execute the query 
      $result = $conn->query($query);
      if ($result) {
@@ -103,7 +106,7 @@
             <br>
             
             <label> Gender: </label>
-            <input name="user_gender" value="<?php echo $row['gender']; ?>" type="text">
+            <input name="user_gender" value="<?php echo $row['gender']??"N/A"; ?>" type="text">
 
             <br>
             <label> Mobile: </label>
