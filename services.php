@@ -37,6 +37,9 @@
             </div>';
             }else{
                 echo '<div class="d-flex">
+                <a class="nav-link text-nowrap text-truncate" href="register.php">Sign up</a>
+                <span class="mx-3">|</span>
+                <a class="nav-link text-nowrap text-truncate" href="login.php">Login</a>
             </div>';
             }
         ?>
