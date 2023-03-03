@@ -86,11 +86,10 @@
     <div class="profile-pic-container">
         <div class="profile-pic">
         <?php
-        $image = $row['user_image'];
          if($row['user_image'] == ''){
-            echo '<i class="fa fa-user" aria-hidden="true"></i>';
+            echo '<img src="images/default-avatar.png">';
          }else{
-            echo '<img src="uploaded_img/'.$row['image'].'">';
+            echo '<img src="uploaded_img/'.$row['user_image'].'">';
          }
          if(isset($message)){
             foreach($message as $message){
@@ -98,9 +97,6 @@
             }
          }
       ?>
-        <style>
-#         
-        </style>
          
         </div>
         <div class="info-content">
