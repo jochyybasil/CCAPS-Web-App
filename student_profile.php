@@ -89,7 +89,7 @@
          if($row['user_image'] == ''){
             echo '<img src="images/default-avatar.png">';
          }else{
-            echo '<img src="uploaded_img/'.$row['user_image'].'">';
+            echo '<img src="user_profile_pictures/'.$row['user_image'].'">';
          }
          if(isset($message)){
             foreach($message as $message){
@@ -121,7 +121,7 @@
            
             <br>
             <label> Date of Birth: </label>
-            <input name="user_dob" placeholder="dob" value="<?php echo $row['DOB']??"N/A"; ?>" type="date">
+            <input name="user_dob" placeholder="dob" value="<?php echo $row['DOB']; ?>" type="text">
 
             <br>
             <br>
