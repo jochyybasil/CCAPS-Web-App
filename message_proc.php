@@ -32,6 +32,6 @@
 
     $mess_sql = "INSERT INTO messages (sender_name, message_content, receiver_name) 
     VALUES ('$sender_name','$message_content', '$instructor_id')";
-    mysqli_query($connection, $mess_sql);
+    
 ?>
 

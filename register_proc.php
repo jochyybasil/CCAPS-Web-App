@@ -1,6 +1,6 @@
 <?php
 ob_start(); // start output buffering
-include "../MODEL/db.php";
+include "db.php";
 
 // create customer account
 if(isset($_POST["register"])){
@@ -23,7 +23,7 @@ if(isset($_POST["register"])){
     $check_sql = "SELECT email_address FROM Web_user WHERE email_address ='$mail' LIMIT 1 ";
     $check_result = $conn->query($check_sql);
     if($check_result->num_rows == 1) {
-        header("Location: ../VIEWS/register.php");
+        header("Location: register.php");
         exit();
     }
     else{
@@ -48,17 +48,17 @@ if(isset($_POST["register"])){
 
             if($result){
                 if ($status == 1){
-                    header("Location: ../VIEWS/dashboard.php");
+                    header("Location: dashboard.php");
                     exit();
                 }
                 else{
-                    header("Location: http://localhost/MindScope-Web-App/VIEWS/login.php");
+                    header("Location: login.php");
                     exit();
                 }
                  
             }
             else{
-                header("Location: http://localhost/MindScope-Web-App/VIEWS/login.php");
+                header("Location: login.php");
                 exit();
             }
         }
