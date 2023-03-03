@@ -101,7 +101,7 @@
         </div>
         <div class="info-content">
         <br>
-        <span>update your pic :</span>
+        <span>update photo:</span>
             <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" >
         </div>
     </div>
