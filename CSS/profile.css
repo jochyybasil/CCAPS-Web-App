@@ -11,9 +11,10 @@
 .profile-pic-container{
 
 position: absolute;
-width: 350px;
-height: 557px;
+width: 30%;
+height: 80%;
 left: 10%;
+right: 5%;
 top: 25%;
 
 background: rgba(160, 30, 30, 0.5);
@@ -22,23 +23,20 @@ border-radius: 5px;}
 .profile-pic{
 	align-self: center;
 	justify-content: center;
-	position: absolute;
-	width: 252px;
-	height: 246px;
-	left: 54px;
-	top: 63px;
+	position: relative;
+	width: 40%;
+	height: 30%;
+	left: 10px;
+	top: 20px;
 	/* background: url("/MindScope-Web-App/Screenshot_20221101_101559.png"); */
 	background-size: cover;
-	border-radius: 50%;
-
-
-
+	align-items: center;
 }
 
 .profile-info-container{
 position: absolute;
-width: 43%;
-height: 563px;
+width: 50%;
+height: 80%;
 left: 40%;
 top:25%;
 
