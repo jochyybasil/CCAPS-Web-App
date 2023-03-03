@@ -7,21 +7,25 @@
 ?>
 <?php 
     if(isset($_POST["submit"])){
-        $name =$_POST["username"];
+        $name =$_POST["user_name"];
         $email =$_POST["email"];
         $phone =$_POST["phone"];
         $message =$_POST["message"];
 
         $sql  = "INSERT INTO Contact (uname, utel_number, uemail, message_details)
-        VALUES ('$name', '$phone', '$mail','$message')";
+        VALUES ('$name', '$phone', '$email','$message')";
 
        $result= $conn->query($sql);
 
        if($result){
-        echo "<script> alert('message sent');</script>";
+        echo "<script> 
+          alert('message sent');
+        </script>";
        }
        else{
-            echo "<script> alert('message failed to send');</script>";
+            echo "<script>
+               alert('message failed to send');
+              </script>";
        }
     }
 
@@ -117,10 +121,10 @@
      
         <form action="" method ="POST">
         <div class="input-box">
-          <input mame="username" type="text" placeholder="Enter your name">
+          <input name="user_name" type="text" placeholder="Enter your name">
         </div>
         <div class="input-box">
-          <input mame="PHONE" type="text" placeholder="Enter your phone number">
+          <input name="phone" type="text" placeholder="Enter your phone number">
         </div>
         <div class="input-box">
           <input name="email" type="text" placeholder="Enter your email">
@@ -129,7 +133,7 @@
         <input type="text" name="message" placeholder="Enter your message">
         </div>
         <div class="button">
-          <input type="button" name="submit" value="Send Now">
+          <input type="submit" name="submit" value="Send Now">
         </div>
       </form>
     </div>

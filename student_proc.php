@@ -11,6 +11,7 @@
     $phoneN =  $_POST['user_phone'];
     $major =  $_POST['user_major'];
     $date_of_birth = $_POST['user_dob'];
+    $update_image = $_FILES["image"]["name"];
 
     
 
@@ -27,23 +28,33 @@
     echo "Error updating record: " . $conn->error;
     }
 
-    $update_image = $_FILES['update_image']['name'];
-    $update_image_size = $_FILES['update_image']['size'];
-    $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
-    $update_image_folder = './user_profile_pictures/'.$update_image;
+    
+    // $update_image_size = $_FILES['update_image']['size'];
+    // $update_image_tmp_name = $_FILES['update_image']['tmp_name'];
+    $update_image_folder = "pics/".basename($update_image);
 
     if(!empty($update_image)){
-        if($update_image_size > 2000000){
+        if($_FILES['image']['size'] > 2000000){
             echo 'image is too large';
         }else{
             $image_update_query =  "UPDATE user_profile SET user_image = '$update_image' WHERE web_userID = $loggedin_userID";
             $result = $conn->query($image_update_query);
             if($image_update_query){
-                move_uploaded_file($update_image_tmp_name, $update_image_folder);
+                if (move_uploaded_file($_FILES['image']['tmp_name'], $update_image_folder)){
+                    header("Location: student_profile.php");
+                }
+                else{
+                    "update failed";
+                }
             }
-            echo "image updated succssfully!";
+            else{
+                echo"failed";
+            }
+            
         }
     }
+
+
 
     }else{
         echo"no update";

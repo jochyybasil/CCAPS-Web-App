@@ -1,5 +1,4 @@
 <?php
-ob_start(); // start output buffering
 include "db.php";
 
 // create customer account
@@ -48,23 +47,22 @@ if(isset($_POST["register"])){
 
             if($result){
                 if ($status == 1){
-                    header("Location: dashboard.php");
-                    exit();
+                    echo "<script>alert('Successfully Registered');
+                window.location.href = 'dashboard.php';</script>";
                 }
                 else{
-                    header("Location: login.php");
-                    exit();
+                    echo "<script>alert('Successfully Registered');
+                window.location.href = 'login.php';</script>";
                 }
                  
             }
             else{
-                header("Location: login.php");
-                exit();
+                echo "<script>alert('Registration Failed');
+                window.location.href = 'register.php';</script>";
             }
         }
     }
 }
 
-ob_end_flush(); // flush output buffer
 ?>
 

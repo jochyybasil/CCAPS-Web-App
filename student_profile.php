@@ -82,32 +82,27 @@
       }
    ?>
 
-    <form method="post">  
+    <form action="student_proc.php" method="POST" enctype="multipart/form-data">  
+
     <div class="profile-pic-container">
         <div class="profile-pic">
             <?php
             if($row['user_image'] == ''){
                 echo '<img src="images/default-avatar.png" style="border-radius:50%">';
             }else{
-                echo '<img src="uploaded_img/'.$row['user_image'].'" style="border-radius:50%">';
+                echo '<img src="pics/'.$row['user_image'].'" style="border-radius:50%">';
             }
-            if(isset($message)){
-                foreach($message as $message){
-                echo '<div class="message">'.$message.'</div>';
-                }
-            }
+            
             ?>
         </div>
 
         <div class="info-content">
         <br>
         <span>update photo:</span>
-            <input type="file" name="update_image" accept="image/jpg, image/jpeg, image/png" >
+            <input type="file" name="image" accept=".jpg, .jpeg, .png" >
         </div>
     </div>
-    </form>
-
-    <form action="student_proc.php" method="POST">
+   
         <div class="profile-info-container info-content" style="padding-left:20px; padding-top:10px;"> 
             <label> First Name: </label>
             <input name="user_fname" placeholder="First Name" value="<?php echo $row['userFname']; ?>" type="text">

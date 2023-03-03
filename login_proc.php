@@ -2,6 +2,7 @@
 
 include "db.php";
 
+
 // check if login form was submitted, else redirect/return back to login page
 if (isset($_POST['login'])){
 
@@ -39,8 +40,7 @@ if (isset($_POST['login'])){
         $user_psd = $row["user_password"];
 
        
-        
-
+    
 
 		if (md5($passw) ==  $user_psd) {
 
@@ -52,15 +52,18 @@ if (isset($_POST['login'])){
 
             // if user role is admin send to adimpage
             if ($user_status == 1){
-                // echo"redirect to dash";
-                header('location: dashboard.php');
-                exit;
+                //echo"redirect to dash";
+                // echo "<script>alert('successfully logged in to dash');
+                // window.location.href = 'dashboard.php';</script>";
+                // exit();
                 }
 
-            elseif ($user_status == 2){
-                // echo"redirect to index";
-                header('location: index.php');
-                exit;
+            else if ($user_status == 2){
+                //echo"redirect to index";
+                echo "<script>alert('successfully logged in');
+                window.location.href = 'index.php';</script>";
+                //header('Location: index.php');
+                // exit();
                 }
 
             }
@@ -72,7 +75,8 @@ if (isset($_POST['login'])){
 
     else {
             // echo "back to login";
-	  		header('location: login.php');
+            echo "<script>alert(' log in failed');
+            window.location.href = 'login.php';</script>";
 	  		exit();	  	
         }
 

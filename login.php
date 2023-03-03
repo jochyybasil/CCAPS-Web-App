@@ -99,7 +99,6 @@
 
             if(mailreg.test(uemail.value)){
                 // mailreg.test(uemail.match)
-                alert('email is vald');
                 handleAjax();
                 return false;
             }
@@ -143,8 +142,8 @@
                 // Everything is good, the response was received.
                     if (ajax.status === 200) {
                     // Perfect!
-                        alert('successfully logged in');
-                        //window.location.href = "login.php";
+                        // alert('successfully logged in');
+                        // window.location.href = "index.php";
                         return false;
                     } else {
                     // There was a problem with the request.
